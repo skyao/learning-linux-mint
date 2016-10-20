@@ -6,7 +6,7 @@ Linux Mint是对用户友好而功能强大的操作系统。它诞生的目的�
 
 ![](https://www.linuxmint.com/pictures/screenshots/sarah/thumb_cinnamon.png)
 
-个人对 Linux Mint 非常喜欢，已经成为目前主力操作系统(Linux Mint 为主，windows server 2016 为备，双系统)。这份 Linux Mint 学习笔记, 记录 Linux Mint (当前时最新发布的 18 版本) 的学习过程和日常使用.
+个人对 Linux Mint 非常喜欢，已经成为目前主力操作系统(Linux Mint 为主，windows server 2016 为备，双系统)。这份 Linux Mint 学习笔记, 记录 Linux Mint (最新发布的 Linux Mint 18 Sarah Cinnamon 版本) 的学习过程和日常使用.
 
 
 
