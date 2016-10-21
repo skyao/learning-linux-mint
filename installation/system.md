@@ -11,4 +11,4 @@
 
 ![](images/uncheck_ppa.jpg)
 
-这个操作可以在每次你觉得 apt udpate 速度慢时检查 :)
+这个操作可以在每次你觉得 apt update 速度慢时检查 :)

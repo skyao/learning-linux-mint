@@ -1,6 +1,6 @@
 # 硬件配置
 
-tags: 驱动,触摸板,节能,exfat
+tags: 驱动,触摸板,节能,exfat,开机自启动
 
 安装完成之后，需要做必要的硬件配置。
 
@@ -56,6 +56,11 @@ udisksctl mount -p block_devices/sdb4
 
 ![](images/auto_mount_ntfs.jpg)
 
-## 硬件监控
+
+
+
+
+
+
 
 
