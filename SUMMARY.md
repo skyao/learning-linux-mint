@@ -17,6 +17,11 @@
 		* [shutter](daily/tool/shutter.md)
 	* [系统类](daily/system/index.md)
 	* [网络类](daily/network/index.md)
+		* [设置DNS](daily/network/dns.md)
+		* [使用终端做 ssh client](daily/network/terminal_ssh_client.md)
+		* [SSH代理服务器](daily/network/ssh_qiang.md)
+		* [Google chrome 浏览器](daily/network/chrome.md)
+		* [Remmina 远程桌面](daily/network/remmina.md)
 * [全文标签总览](tags.md)
 
 
