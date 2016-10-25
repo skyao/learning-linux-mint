@@ -29,6 +29,7 @@
 	* [编辑器](daily/editor/index.md)
 		* [Vim](daily/editor/vim.md)
 		* [Haroopad](daily/editor/haroopad.md)
+		* [Xmind](daily/editor/xmind.md)
 * [全文标签总览](tags.md)
 
 
