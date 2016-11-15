@@ -15,6 +15,7 @@
 		* [搜狗输入法](daily/tool/sougou_input.md)
 		* [Gnome Do](daily/tool/gnome_do.md)
 		* [shutter](daily/tool/shutter.md)
+		* [variety](daily/tool/variety.md)
 	* [系统类](daily/system/index.md)
 		* [Wine](daily/system/wine.md)
 	* [网络类](daily/network/index.md)
