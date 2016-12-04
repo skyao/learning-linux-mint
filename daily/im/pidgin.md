@@ -6,6 +6,8 @@ Linux Mint 自带 pidgin，版本是 2.10。
 
 如果想升级到最新版本，或者，因为某些特殊原因导致内置版本的 pidgin 不可使用，就需要考虑从源码开始编译。
 
+> 特别说明： 手工编译升级 pidgin 和 lync插件 pidpin-sipe 到最新版本之后，开始可以使用，后面不久就莫名其妙的出问题，表现为 pidgin 启动之后无法找到 pidpin-sipe 导致无法支持 office communicator 协议，但是系统又显示 pidpin-sipe 已经安装。因此建议，别折腾了，直接用仓库自带版本的 pidgin 和 pidpin-sipe 就好。
+
 安装前，请使用软件管理器卸载 pidgin，或者直接 `sudo apt-get remove pidgin` 。
 
 ### 下载源码

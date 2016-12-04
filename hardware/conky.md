@@ -16,6 +16,16 @@ Conky 是一个轻量级的系统监控工具，非常适合日常用来监控cp
 1. Conky
 1. Conky-manager
 
+如果发现找不到 `Conky-manager`，请先添加ppa：
+
+```bash
+sudo add-apt-repository ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install conky-manager
+```
+
+> 注： conky-manager 是conky的设置界面，必须安装的，否则不方便管理。
+
 ## 配置
 
 ### 开机自启动

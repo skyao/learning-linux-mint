@@ -23,6 +23,7 @@
 		* [设置DNS](daily/network/dns.md)
 		* [使用终端做 ssh client](daily/network/terminal_ssh_client.md)
 		* [SSH代理服务器](daily/network/ssh_qiang.md)
+		* [Shadowsocks科学上网](daily/network/shadowsocks.md)
 		* [Google chrome 浏览器](daily/network/chrome.md)
 		* [Remmina 远程桌面](daily/network/remmina.md)
 	* [IM/即时通讯类](daily/im/index.md)

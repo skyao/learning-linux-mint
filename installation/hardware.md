@@ -30,13 +30,15 @@ Linux Mint 会先做一次系统更新检查，然后给出可以安装的驱动
 
 ### exfat支持
 
-移动硬盘一般用的文件格式exfat，mint linux 默认不支持，需要安装 exfat-fuse / exfat-utils:
+移动硬盘一般用的文件格式exfat，mint linux 18 之前的版本 默认不支持，需要安装 exfat-fuse / exfat-utils:
 
 ```bash
 sudo apt-get install exfat-fuse exfat-utils
 ```
 
 重启后生效。
+
+对于 linux mint 18，默认已经提供了对exfat的支持，不再需要自己安装。
 
 ### 自动装载windows分区
 
@@ -56,11 +58,13 @@ udisksctl mount -p block_devices/sdb4
 
 ![](images/auto_mount_ntfs.jpg)
 
+### 关闭蓝牙设备
 
+如果不需要使用蓝牙设备，可以打开 "开始菜单" -> "系统设置" -> "硬件" -> "蓝牙"，关闭对蓝牙的支持：
 
+![](images/blueteeth_close.jpg)
 
-
-
+注意： 建议去除显示托盘图标的勾选。
 
 
 

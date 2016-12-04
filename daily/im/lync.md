@@ -8,6 +8,8 @@ Lync (后来被微软收购之后改名为 Skype for business) 没有 linux 版�
 
 上一节介绍到，Linux Mint 18 自带 pidgin，也可以自行卸载再从源码编译安装到最新版本。
 
+> 特别说明： 手工编译升级 pidgin 和 lync插件 pidpin-sipe 到最新版本之后，开始可以使用，后面不久就莫名其妙的出问题，表现为 pidgin 启动之后无法找到 pidpin-sipe 导致无法支持 office communicator 协议，但是系统又显示 pidpin-sipe 已经安装。因此建议，别折腾了，直接用仓库自带版本的 pidgin 和 pidpin-sipe 就好。
+
 ## sipe插件
 
 sipe 项目是一个 "Protocol plugin for Office 365/Lync/OCS"，用于Adium, Pidgin, Miranda and Telepathy IM Framework。
