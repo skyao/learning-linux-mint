@@ -27,6 +27,7 @@
 		* [Shadowsocks科学上网](daily/network/shadowsocks.md)
 		* [Google chrome 浏览器](daily/network/chrome.md)
 		* [Remmina 远程桌面](daily/network/remmina.md)
+		* [TeamViewer 远程桌面](daily/network/teamviewer.md)
 	* [IM/即时通讯类](daily/im/index.md)
 		* [Skype](daily/im/skype.md)
 		* [Pidgin](daily/im/pidgin.md)

@@ -8,4 +8,4 @@ Linux Mint是对用户友好而功能强大的操作系统。它诞生的目的�
 
 笔记发布于 gitbook，请点击下面的链接阅读:
 
-https://skyao.gitbooks.io/leaning-linux-mint/
+https://skyao.gitbooks.io/learning-linux-mint/

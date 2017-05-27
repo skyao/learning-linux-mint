@@ -23,7 +23,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-        "base": "https://github.com/skyao/leaning-linux-mint/edit/master",
+        "base": "https://github.com/skyao/learning-linux-mint/edit/master",
         "label": "Edit"
     }
   },
