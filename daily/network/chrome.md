@@ -20,7 +20,7 @@ https://chrome.google.com/webstore/category/extensions?hl=zh-CN
 
 ### SwitchyOmega
 
-在google chrome 中可以安装 SwitchyOmega 插件来方便的管理代理服务器(还是主要为了翻墙),然后加入场景设置使用本地 shadowsocks 作为代理服务器.
+在 google chrome webstore 中可以安装 SwitchyOmega 插件来方便的管理代理服务器(还是主要为了翻墙),然后加入场景设置使用本地 shadowsocks 作为代理服务器.
 
 #### 安装SwitchyOmega
 
@@ -28,6 +28,17 @@ https://chrome.google.com/webstore/category/extensions?hl=zh-CN
 
 ![](images/switchy_search.jpg)
 
+但是，如果 google chrome webstore 被墙，就麻烦了。此时需要做的事情是：
+
+1. 手工下载
+
+	SwitchyOmega的备用下载地址： https://github.com/FelisCatus/SwitchyOmega/releases
+
+2. 本地安装
+
+	在Chrome的地址栏中输入 "chrome://extensions/" 打开扩展程序管理界面，然后拖放下载的 SwitchyOmega.crx 文件到这个界面，就可以安装了。
+
+    注意不要直接拖放到普通页面，chrome在最新的版本中已经不再容许这种方式安装。
 
 #### 配置shadowsocks
 
