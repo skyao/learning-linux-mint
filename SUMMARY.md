@@ -5,6 +5,7 @@
 	* [硬件设置](installation/hardware.md)
 	* [系统设置](installation/system.md)
 		* [快捷键修改](installation/hotkey.md)
+		* [常用快捷键](installation/hotkey_daily.md)
 * [硬件与监控](hardware/index.md)
     * [Hardinfo](hardware/hardinfo.md)
     * [System Monitor](hardware/system_monitor.md)
