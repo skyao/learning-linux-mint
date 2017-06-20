@@ -15,6 +15,7 @@
 * [日常软件](daily/index.md)
 	* [工具类](daily/tool/index.md)
 		* [搜狗输入法](daily/tool/sougou_input.md)
+		* [调整字体](daily/tool/font.md)
 		* [Gnome Do](daily/tool/gnome_do.md)
 		* [shutter](daily/tool/shutter.md)
 		* [variety](daily/tool/variety.md)
