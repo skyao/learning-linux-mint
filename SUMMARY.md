@@ -20,6 +20,7 @@
 		* [shutter](daily/tool/shutter.md)
 		* [variety](daily/tool/variety.md)
 	* [系统类](daily/system/index.md)
+		* [Vmware](daily/system/vmware.md)
 		* [Wine](daily/system/wine.md)
 		* [winetricks](daily/system/winetricks-zh.md)
 	* [网络类](daily/network/index.md)
