@@ -2,8 +2,6 @@
 
 tags:输入法
 
-Linux Mint 18 是基于 ubuntu 16.04，比较新，之前的 搜狗输入法 安装方式无法使用，因此需要另想办法
-
 ## 安装
 
 安装步骤如下：
@@ -12,31 +10,15 @@ Linux Mint 18 是基于 ubuntu 16.04，比较新，之前的 搜狗输入法 安
 
 	http://pinyin.sogou.com/linux/?r=pinyin
 
-	最新版本已经支持 Ubuntu12.04、14.04及16.04。
+	最新版本已经支持 Ubuntu12.04、14.04及16.04，而且对 linux mint 18 的支持非常好。
 
 2. 在终端中执行命令：
 
 	```bash
-	sudo dpkg -i sogoupinyin_2.0.0.0072_amd64.deb
+	sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
     ```
 
-    安装过程中会因为缺少依赖包而失败。
-
-3. 安装依赖，在终端输入：
-
-	```bash
-	sudo apt-get install -f
-    ```
-
-	安装所有缺失的依赖关系。
-
-4. 再次输入命令
-
-	```bash
-	sudo dpkg -i sogoupinyin_2.0.0.0072_amd64.deb
-    ```
-
-5. 重启系统，完成安装
+3. 重启系统，完成安装
 
 安装完成之后，在设置时会提示：
 
@@ -54,10 +36,17 @@ sudo apt-get install fcitx-config-gtk
 
 ![](images/fcitx.jpg)
 
-但是显示 "缺少13个部件"，点击 "安装缺失的部件"。安装完成之后，继续报告说 "48个可选部件可用"：
+打开 "开始菜单" -> "首选项" -> "Fcitx 配置", 设置如下：
 
-![](images/fcitx_2.jpg)
+![](images/fcitx-2.jpg)
 
-如果继续安装，则会下载安装下面的内容，看名字时其他各种输入法，感觉没有必要，可以直接点 cancel 中断。
+"Global Config" 里面可以看到相关的设置：
 
-![](images/fcitx_3.jpg)
+![](images/fcitx-3.jpg)
+
+部分细节：
+
+1. 切换输入法的快捷键是 `Ctrl+Space`
+2. 上一页的快捷键是 `-` 或者 `,`
+3. 下一页的快捷键是 `=` 或者 `.`
+4. "Candidate Word Number"用来设置候选词的个数
