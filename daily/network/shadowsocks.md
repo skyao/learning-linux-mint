@@ -26,6 +26,6 @@ ss-qt5
 
 ### 开机自启动
 
-为 shadowsocks 添加开机自动启动：
+为 shadowsocks 添加开机自动启动, "开始菜单" -> "首选项" -> "开机自启动程序", 点 "添加" --> "选择程序"，找到 "Shadowsocks-Qt5",添加后再修改启动延迟：
 
 ![](images/shadowsocks_startup.jpg)
