@@ -20,21 +20,14 @@ tags:输入法
 
 3. 重启系统，完成安装
 
-安装完成之后，在设置时会提示：
-
-    You're currently running Fcitx with GUI, but fcitx-configtool couldn't be found, the package name is usually fcitx-config-gtk, fcitx-config-gtk3 or fcitx-configtool. Now it will open config file with default text editor.
-
-需要再安装一下`fcitx-config-gtk`：
-
-```bash
-sudo apt-get install fcitx-config-gtk
-```
 
 ## 设置
 
 打开 "开始菜单" -> "首选项" -> "输入法"，可以看到输入法已经默认为fcitx：
 
 ![](images/fcitx.jpg)
+
+点击 "简体中文" 之后的 "安装" 开始安装。
 
 打开 "开始菜单" -> "首选项" -> "Fcitx 配置", 设置如下：
 
@@ -50,3 +43,7 @@ sudo apt-get install fcitx-config-gtk
 2. 上一页的快捷键是 `-` 或者 `,`
 3. 下一页的快捷键是 `=` 或者 `.`
 4. "Candidate Word Number"用来设置候选词的个数
+
+可以删除部分不需要的输入法：
+
+![](images/fcitx-4.jpg)
