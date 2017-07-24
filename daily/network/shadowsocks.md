@@ -58,3 +58,28 @@ ss-qt5
     ```
 
 4. 设置系统网络代理为自动，url为 `file:///home/sky/work/soft/pac/autoproxy.pac`
+
+上面的方式，有些情况下会无效，因此不得不继续寻找其他方法。
+
+- [Convert Shadowsocks into an HTTP proxy](https://github.com/shadowsocks/shadowsocks/wiki/Convert-Shadowsocks-into-an-HTTP-proxy)
+- [为终端设置Shadowsocks代理](http://droidyue.com/blog/2016/04/04/set-shadowsocks-proxy-for-terminal/)
+- [Centos 7 搭建 Shadowsocks 配置 iptables 规则](https://www.micronbot.com/Linux/13.html)
+
+http://droidyue.com/blog/2016/04/04/set-shadowsocks-proxy-for-terminal/
+
+```bash
+sudo apt-get install polipo
+```
+
+然后打开配置文件 `/etc/polipo/config`
+
+
+1. 设置ParentProxy为Shadowsocks，通常情况下本机shadowsocks的地址如下
+2. 设置日志输出文件
+
+```bash
+socksParentProxy = "localhost:11080"
+socksProxyType = socks5
+logFile=/var/log/polipo
+logLevel=4
+```
