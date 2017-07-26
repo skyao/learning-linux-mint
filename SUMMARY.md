@@ -27,8 +27,10 @@
 		* [设置DNS](daily/network/dns.md)
 		* [使用终端做 ssh client](daily/network/terminal_ssh_client.md)
 		* [SSH代理服务器](daily/network/ssh_qiang.md)
-		* [Shadowsocks科学上网](daily/network/shadowsocks.md)
+		* [Shadowsocks](daily/network/shadowsocks.md)
 		* [Google chrome 浏览器](daily/network/chrome.md)
+		* [polipo](daily/network/polipo.md)
+		* [全局代理](daily/network/global_proxy.md)
 		* [Remmina 远程桌面](daily/network/remmina.md)
 		* [TeamViewer 远程桌面](daily/network/teamviewer.md)
 		* [挂载 windows 共享目录](daily/network/mount_windows_share.md)
@@ -46,6 +48,11 @@
 		* [Vim](daily/editor/vim.md)
 		* [Haroopad](daily/editor/haroopad.md)
 		* [Xmind](daily/editor/xmind.md)
+* [开发软件](develop/index.md)
+	* [Java](develop/java/index.md)
+	* [Nodejs](develop/nodejs/index.md)
+	* [Go](develop/go/index.md)
+	* [开发工具](develop/tool/index.md)
 * [全文标签总览](tags.md)
 
 
