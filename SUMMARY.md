@@ -2,7 +2,10 @@
 
 * [资料](data/index.md)
 * [安装](installation/index.md)
-	* [硬件设置](installation/hardware.md)
+	* [硬件设置](installation/hardware/index.md)
+		* [Nvidia显卡](installation/hardware/nvidia_graph.md)
+		* [AMD显卡](installation/hardware/amd_graph.md)
+		* [fsck硬盘检查](installation/hardware/fsck.md)
 	* [系统设置](installation/system.md)
 		* [快捷键修改](installation/hotkey.md)
 		* [常用快捷键](installation/hotkey_daily.md)
