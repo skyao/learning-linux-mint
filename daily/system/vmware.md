@@ -50,3 +50,10 @@ mks.gl.allowBlacklistedDrivers = "TRUE"
 
 1. [Enable 3D HW acceleration on VMWare Workstation 10 on Ubuntu 14.04](https://askubuntu.com/questions/537787/enable-3d-hw-acceleration-on-vmware-workstation-10-on-ubuntu-14-04)
 
+## 补充
+
+先安装了一个win8.1，发现一个严重问题：cpu占用很高，虚拟机空载时，在宿主机中看到大概有300%-400%的cpu占用。而windows里面的cpu使用率展示出现问题，始终显示为0%. 结果是使用时很卡，尤其ppt画图时。
+
+后面尝试安装了win10，就正常了。可以做到虚拟机空载时，宿主机的cpu占用也几乎为零。PPT界面也很流畅。
+
+总结：vmware + win10 是最终的比较好的选择。
