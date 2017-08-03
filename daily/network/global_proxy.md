@@ -59,13 +59,14 @@ polipo 安装好之后，在终端执行命令时加入 `http_proxy=http://local
 
 1. 加别名
 
-	在 `/etc/profile` 中增加下列内容：
+	在 `~/.bashrc` 中增加下列内容：
 
 	```bash
     alias hp="http_proxy=http://localhost:8123"
+    alias sp="all_proxy=http://localhost:11080"
     ```
 
-	需要时在命令前加 `hp` 即可，如 `hp curl ip.gs`。
+	需要时在命令前加 `hp` 或者 `hp` 即可，如 `hp curl ip.gs` 或 `sp curl ip.gs`。
 
 2. 直接export
 
@@ -73,6 +74,7 @@ polipo 安装好之后，在终端执行命令时加入 `http_proxy=http://local
 
 	```bash
     export http_proxy=http://localhost:8123
+    export all_proxy=http://localhost:11080
     ```
 
 这样 shadowsocks 的 socks5 代理 和 polipo 的 http 代理配置，就可以覆盖绝大部分情况了。
@@ -95,17 +97,47 @@ polipo 安装好之后，在终端执行命令时加入 `http_proxy=http://local
 
 测试过 chrome 浏览器，在安装 SwitchyOmega 的情况下，可以继续通过 SwitchyOmega 控制 chrome 的代理，"直接连接" / "系统代理" / "auto switch" 都可以工作。
 
-
-
 ### 需要时再开启全局代理
 
+如果不想直接开启全局代理，可以这样：
+
+1. 网络设置那里修改为不用代理
+2. chrome等浏览器支持socks5代理的，直接设置为 shadowsocks （加自动判断)
+3. 在 `~/.bashrc` 中设置hp,sp的alias，需要时方便使用
+4. 对于某些上述方法都不生效的情况，需要单个处理（具体见下文)
 
 ## 需要单独设置代理的情况
 
+### git
+
+如果是用http clone，则只要设置：
+
+```bash
+git config --global http.proxy 'socks5://127.0.0.1:11080'
+git config --global https.proxy 'socks5://127.0.0.1:11080'
+```
+
+如果时用ssh cone，则麻烦一些。编辑或新建 `~/.ssh/config` 文件，增加如下内容:
+
+```bash
+# 这里必须是 github.com，因为这个跟我们 clone 代码时的链接有关
+Host github.com
+# 如果用默认端口，这里是 github.com，如果想用443端口，这里就是 ssh.github.com 详见 https://help.github.com/articles/using-ssh-over-the-https-port/
+HostName github.com
+User git
+# 如果是 HTTP 代理，把下面这行取消注释，并把 proxyport 改成自己的 http 代理的端口
+# ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=6667
+# 如果是 socks5 代理，则把下面这行取消注释，并把 6666 改成自己 socks5 代理的端口
+ProxyCommand nc -v -x 127.0.0.1:11080 %h %p
+```
+
+参考资料: [设置socks5代理](http://www.jianshu.com/p/ff4093ed893f)
+
+> 注： 不用代理时从github clone的速度是几k到十几k，使用代理之后是3-5M!
 
 ### npm
 
-为 npm 设置代理
+为 npm 设置代理(不过还是推荐用国内镜像)：
 
 ```bash
 npm config set proxy http://localhost:8123
