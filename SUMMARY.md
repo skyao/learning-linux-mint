@@ -46,6 +46,8 @@
 		* [Vim](daily/editor/vim.md)
 		* [Haroopad](daily/editor/haroopad.md)
 		* [Xmind](daily/editor/xmind.md)
+* [开发软件](develop/index.md)
+	* [Idea](develop/idea.md)
 * [全文标签总览](tags.md)
 
 
