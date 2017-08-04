@@ -1,22 +1,12 @@
 # cpufreqd
 
-tags:cpufreqd,节能,cpu,开机自启动
-
 折腾 linux mint 的时候,发现linux系统节能方面表现不太好. 后来找到了cpufreqd这个工具, 使用后发现非常好用,可以自定义规则来满足各种情况下的cpu设定, 极度灵活。
 
 叹为观止, 在 cpu 频率调整方面堪称神器，强烈推荐给笔记本用户.
 
 ##  安装
 
-安装简单，在18之前的linux mint版本中还需要加ppa仓库:
-
-```bash
-sudo add-apt-repository ppa:artfwo/ppa
-sudo apt-get update
-sudo apt-get install cpufreqd
-```
-
-而在 linux mint 18中发现直接用软件管理器安装，不用添加ppa。
+linux mint 18中发现直接用软件管理器安装，不用添加ppa。
 
 "开始菜单" -> "系统管理" -> "软件管理器"，搜索 `cpufreqd`:
 
@@ -47,101 +37,103 @@ cpufreqd 是一个命令行工具，因此开机自启动需要手工添加。
 
 ## 定制方案
 
-### 我的定制方案
+### 注意事项
 
-下面是我给自己定制的cpu频率设置:
+在使用 cpufreqd 调节时，最好能实时查看 linux 的系统日志，如果调节不成功，则系统日志中会有错误信息。
 
 ```bash
-# when AC on & cpu is cool & has load, feel free to enjoy full performance
+tail -f /var/log/syslog
+```
+
+然后通过 conky 等工具实时查看 cpu 频率，可以知道是否调整符合预期。
+
+常见的几个问题：
+
+1. policy 的支持，一般只支持到 performance 和 powersave 两种，如果设置为ondemand可能会报错
+2. cpu频率设置的太低，如果超过cpu物理支持的最低频率，也会报错
+3. rule名字重名
+
+### 我的定制方案
+
+下面是我给自己定制的cpu频率设置，给笔记本用的:
+
+```bash
 [Rule]
-name=AC Rule
-ac=on                    # (on/off)
-acpi_temperature=0-40
-cpu_interval=10-100
-profile=Performance High
+name=on-high
+ac=on
+acpi_temperature=0-50
+cpu_interval=20-100
+profile=high
 [/Rule]
 
-# when AC on & cpu is cool & no load, On Demand High
 [Rule]
-name=AC Rule
-ac=on                    # (on/off)
-acpi_temperature=0-40
-cpu_interval=0-10
-profile=On Demand High
+name=on-normal
+ac=on
+acpi_temperature=50-60
+cpu_interval=20-100
+profile=normal
 [/Rule]
 
-# when AC on but cpu is not cool, turn to on demand high
 [Rule]
-name=AC Rule
-ac=on                    # (on/off)
-acpi_temperature=40-50
-profile=On Demand High
+name=on-low
+ac=on
+cpu_interval=0-20
+profile=low
 [/Rule]
 
-# when AC on but cpu is hot, turn to on demand low
 [Rule]
-name=AC Rule
-ac=on                    # (on/off)
-acpi_temperature=50-100
-profile=On Demand Low
+name=off-high
+ac=off
+acpi_temperature=0-50
+cpu_interval=20-100
+profile=high
 [/Rule]
 
-# when AC off and battery is enough, set to On Demand High
 [Rule]
-name=AC Off - High Battery
-ac=off                   # (on/off)
-battery_interval=50-100
-profile=On Demand High
+name=off-normal
+ac=off
+acpi_temperature=50-60
+cpu_interval=20-100
+profile=normal
 [/Rule]
 
-# when AC off and battery is not enough, set to On Demand Low
 [Rule]
-name=AC Off - Low Battery
-ac=off                   # (on/off)
-battery_interval=20-50
-profile=On Demand Low
-[/Rule]
-
-# when AC off and battery is very low, set to Powersave Low
-[Rule]
-name=AC Off - almost no Battery
-ac=off                   # (on/off)
-battery_interval=0-20
-profile=Powersave Low
+name=off-low
+ac=off
+profile=low
 [/Rule]
 ```
 
-### 思路解析
+台式机的配置就要简单一些：
 
-1. AC on: 有电源,这种情况下电力不是问题, 主要考虑性能和温度的均衡
+```bash
+[Rule]
+name=high
+acpi_temperature=0-50
+cpu_interval=5-100
+profile=high
+[/Rule]
 
-    主要看温度:
+[Rule]
+name=normal
+acpi_temperature=50-80
+cpu_interval=5-100
+profile=normal
+[/Rule]
 
-    - 如果温度低(< 40), 此时既有电力又不发热, 则可以尽量开始高性能, 因此有cpu负载时就直接100%频率使用, 如果没有负载就 ondemand high.
-    - 如果温度不高也不低(40-50), 用 ondemand high
-    - 如果温度已经很高了(> 50), 用 ondemand low
-
-1. AC off: 没有电源, 这种情况下主要时考虑节电, 性能需要尽量压制, 而温度通常不会是问题.
-
-    主要考虑电力:
-
-    - 当电力充足时 (>50%), 设置 On Demand High
-    - 当电力不太多时(20% - 50%), 设置 On Demand Low
-    - 当电力接近耗尽时(< 20%), 强制降频到最低, 设置Powersave Low
-
-### 修改 profile 设定
-
-默认的profile 有几个地方设置我不太满意, 自己修改了一下:
-
-1. 打开了On Demand High/On Demand Low, 看说明是因为在某些平台上ondemand不被支持,因此默认时关闭的. 我测试了发现我的机器时支持的,因此开启, 这个明显比直接设置固定频率要实用.
-
-2. 修改了Powersave Low, 默认是40% cpu, 但是考虑我的方案中, 这个profile只有在最恶劣的情况(无电源+电池电力接近耗尽) 下使用, 因此40% 还是高了点,我直接设置为20%了
+[Rule]
+name=low
+cpu_interval=0-5
+profile=low
+[/Rule]
+```
 
 ### 配置文件参考
 
 下面是默认配置文件和我定制的配置文件,仅供参考:
 
-- [我的定制配置文件](images/linux-cpufreqd/cpufreqd.conf)
+- [我的定制配置文件 - 笔记本电脑](images/linux-cpufreqd/cpufreqd-laptop.conf)
+- [我的定制配置文件 - 台式机](images/linux-cpufreqd/cpufreqd-server.conf)
 - [默认的配置文件](images/linux-cpufreqd/cpufreqd-original.conf)
 
 ## 更多功能

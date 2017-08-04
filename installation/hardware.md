@@ -28,6 +28,28 @@ Linux Mint 会先做一次系统更新检查，然后给出可以安装的驱动
 
 然后，在需要用到 nvidia 独立显卡时，可以再改回来。坦言，好像基本用不上...
 
+最近在安装 nvidia 最新版本的 nvidia-375 驱动时，遇到报错：
+
+```bash
+/sbin/ldconfig.real: /usr/lib/nvidia-375/libEGL.so.1 is not a symbolic link
+/sbin/ldconfig.real: /usr/lib32/nvidia-375/libEGL.so.1 is not a symbolic link
+```
+
+google 发现其他人也遇到类似问题：
+
+- [libEGL.so.1 is not a symbolic link](https://askubuntu.com/questions/900285/libegl-so-1-is-not-a-symbolic-link)
+- [/sbin/ldconfig.real: /usr/lib/nvidia-375/libEGL.so.1 is not a symbolic link
+](https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-375/+bug/1662860)
+
+解决方法如下：
+
+```bash
+sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
+sudo mv /usr/lib32/nvidia-375/libEGL.so.1 /usr/lib32/nvidia-375/libEGL.so.1.org
+sudo ln -s /usr/lib/nvidia-375/libEGL.so.375.39 /usr/lib/nvidia-375/libEGL.so.1
+sudo ln -s /usr/lib32/nvidia-375/libEGL.so.375.39 /usr/lib32/nvidia-375/libEGL.so.1
+```
+
 ### AMD显卡驱动安装
 
 > 注： AMD 的linux 驱动支持烂的要死，最好别用 AMD 的显卡！

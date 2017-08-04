@@ -1,8 +1,8 @@
-# shadowsocks科学上网
+# shadowsocks
 
 tags: shadowsocks
 
-### linux客户端
+## linux客户端
 
 从 [shadowsocks-gui](https://github.com/shadowsocks/shadowsocks-gui) 得知，linux客户端是 `shadowsocks-qt5`，提供中文版本的安装指南 。赞！
 
@@ -24,8 +24,11 @@ ss-qt5
 
 启动后配置和windows版本类似。
 
-### 开机自启动
+## 开机自启动
 
-为 shadowsocks 添加开机自动启动, "开始菜单" -> "首选项" -> "开机自启动程序", 点 "添加" --> "选择程序"，找到 "Shadowsocks-Qt5",添加后再修改启动延迟：
+为 shadowsocks 添加开机自动启动, 点 "设置" -> "常规设置" ：
 
 ![](images/shadowsocks_startup.jpg)
+
+
+
