@@ -143,3 +143,9 @@ ProxyCommand nc -v -x 127.0.0.1:11080 %h %p
 npm config set proxy http://localhost:8123
 npm config set https-proxy http://localhost:8123
 ```
+
+### idea
+
+在 idea 的设置中，"http proxy"，可以设置为 "Manual proxy configuration"，然后选 HTTP，host 为"127.0.0.1",port "8123" (即使用前面polipo提供的http代理)，no proxy for "192.168.*,127.0.0.1"。
+
+> 注: 在 idea 17.2 版本中，测试过，使用"auto-detect proxy settings"和 socks 代理，都会出现问题。通过"check connection"测试时，会发现连接 baidu.com 之类的国内网站OK，但是连接 facebook.com 等需要翻墙的网站时就会失败。只有http proxy 可以正常工作。
