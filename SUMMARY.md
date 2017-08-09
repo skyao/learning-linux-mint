@@ -53,6 +53,8 @@
 		* [Vim](daily/editor/vim.md)
 		* [Haroopad](daily/editor/haroopad.md)
 		* [Xmind](daily/editor/xmind.md)
+* [管理软件](admin/index.md)
+	* [snap](admin/snap/index.md)
 * [开发软件](develop/index.md)
 	* [Java](develop/java/index.md)
 		* [Idea](develop/java/idea.md)
