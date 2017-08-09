@@ -49,18 +49,22 @@ error: cannot perform the following tasks:
 
 导致 snap 完全无法使用。
 
+也不要像某些人建议的用 `ppa:snappy-dev/edge` 这个ppa安装最新的开发版本，这个版本在后面使用时会报错。
+
 ### 正确安装方式
 
-正确的安装方法是:
+正确的安装方法是使用　`ppa:snappy-dev/tools`:
 
 ```bash
 sudo -i
-add-apt-repository ppa:snappy-dev/edge -y
+add-apt-repository ppa:snappy-dev/tools -y
 apt update
 # If you already had snapd installed you need to do a dist-upgrade
 apt dist-upgrade
 # If not, install it with this:
-hp apt install snapd ubuntu-core-launcher
+apt install snapcraft
+apt install snapd
+apt install ubuntu-core-launcher
 ```
 
 > 注: hp 是设置 http_proxy 的alias。见前面代理设置的章节
@@ -69,8 +73,8 @@ hp apt install snapd ubuntu-core-launcher
 
 ```bash
 snap --version
-snap       2.27~rc8+git304.b976c11~ubuntu16.04.1
-snapd      2.27~rc8+git304.b976c11~ubuntu16.04.1
+snap       2.26.14
+snapd      2.26.14
 series     16
 linuxmint  18
 kernel     4.4.0-87-generic
