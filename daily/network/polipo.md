@@ -17,7 +17,12 @@ sudo apt-get install polipo
 ```bash
 socksParentProxy = "localhost:11080"
 socksProxyType = socks5
+proxyAddress = "0.0.0.0"
 ```
+
+注意：如果不设置proxyAddress，则默认为127.0.0.1，这样会导致不能通过具体的IP地址做代理，对于某些程序，比如虚拟机中的程序，就无法使用．为此设置为"0.0.0.0"这样会监听所有IP地址．
+
+参考资料: https://www.irif.fr/~jch/software/polipo/polipo.html
 
 保存配置修改之后重启 polipo:
 
