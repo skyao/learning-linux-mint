@@ -21,6 +21,7 @@
 		* [搜狗输入法](daily/tool/sougou_input.md)
 		* [调整字体](daily/tool/font.md)
 		* [Gnome Do](daily/tool/gnome_do.md)
+		* [Autojump](daily/tool/autojump.md)
 		* [shutter](daily/tool/shutter.md)
 		* [variety](daily/tool/variety.md)
 	* [系统类](daily/system/index.md)

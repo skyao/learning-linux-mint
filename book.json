@@ -1,8 +1,8 @@
 {
   "gitbook": ">=3.2.0",
-  "description": "Linux Mint 学习笔记",
+  "description": "Linux Mint学习笔记",
   "language": "zh-hans",
-  "author": "Sky Ao <aoxiaojian@gmail.cn>",
+  "author": "Sky Ao <aoxiaojian@gmail.com>",
   "extension": null,
   "generator": "site",
   "links" : {
@@ -11,23 +11,26 @@
     }
   },
   "structure" : {
-        "readme" : "README_gitbook.md"
     },
   "plugins": [
+    "-search",
     "-sharing",
-    "toggle-chapters",
-    "edit-link", 
-    "etoc",
-    "back-to-top-button",
+    "edit-link",
+    "github-buttons@2.1.0",
     "tags"
   ],
   "pluginsConfig": {
     "edit-link": {
         "base": "https://github.com/skyao/learning-linux-mint/edit/master",
         "label": "Edit"
+    },
+    "github-buttons": {
+        "repo": "skyao/learning-linux-mint",
+        "types": ["star"],
+        "size": "small"
     }
   },
-  "title": "Linux Mint 学习笔记",
+  "title": "Linux Mint学习笔记",
   "variables": {
   }
 }
