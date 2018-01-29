@@ -53,6 +53,7 @@
 	* [编辑器](daily/editor/index.md)
 		* [Vim](daily/editor/vim.md)
 		* [Haroopad](daily/editor/haroopad.md)
+		* [Typora](daily/editor/typora.md)
 		* [Xmind](daily/editor/xmind.md)
 * [管理软件](admin/index.md)
 	* [snap](admin/snap/index.md)

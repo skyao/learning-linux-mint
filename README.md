@@ -9,8 +9,8 @@ Linux Mint是对用户友好而功能强大的操作系统。它诞生的目的�
 请点击下面的链接阅读或者下载电子版本:
 
 - 在线阅读
-	- [国外服务器][gitbook]：gitbook提供的托管，服务器在国外，速度比较慢，偶尔被墙，HTTPS
-	- [国内服务器][qcloud]：腾讯云加速，国内网速极快，非HTTPS
+	- [国外服务器][gitbook]：gitbook提供的托管，服务器在国外，速度比较慢，经常被墙
+	- [国内服务器][qcloud]：腾讯云加速，国内网速极快(推荐)
 - [下载pdf格式][pdf]
 - [下载mobi格式][mobi]
 - [下载epub格式][epub]
@@ -20,7 +20,7 @@ Linux Mint是对用户友好而功能强大的操作系统。它诞生的目的�
 **请勿用于商业出版**。
 
 [gitbook]: https://skyao.gitbooks.io/learning-linux-mint/
-[qcloud]: http://skyao.io/learning-linux-mint/
+[qcloud]: https://skyao.io/learning-linux-mint/
 [pdf]: https://www.gitbook.com/download/pdf/book/skyao/learning-linux-mint
 [mobi]: https://www.gitbook.com/download/mobi/book/skyao/learning-linux-mint
 [epub]: https://www.gitbook.com/download/epub/book/skyao/learning-linux-mint
