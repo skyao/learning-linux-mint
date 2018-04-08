@@ -7,7 +7,7 @@
   "generator": "site",
   "links" : {
     "sidebar" : {
-        "Sky@Gitbook": "https://skyao.gitbooks.io"
+        "敖小剑的博客": "https://skyao.io"
     }
   },
   "structure" : {
@@ -15,19 +15,12 @@
   "plugins": [
     "-search",
     "-sharing",
-    "edit-link",
-    "github-buttons@2.1.0",
-    "tags"
+    "edit-link"
   ],
   "pluginsConfig": {
     "edit-link": {
         "base": "https://github.com/skyao/learning-linux-mint/edit/master",
         "label": "Edit"
-    },
-    "github-buttons": {
-        "repo": "skyao/learning-linux-mint",
-        "types": ["star"],
-        "size": "small"
     }
   },
   "title": "Linux Mint学习笔记",
