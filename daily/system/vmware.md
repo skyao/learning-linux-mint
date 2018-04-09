@@ -6,9 +6,9 @@ Vmware 支持 linux。对于某些需要使用 windows 软件的场景，安装 
 
 linux 版本的 vmware workstation 下载地址：
 
-https://www.vmware.com/products/workstation-for-linux.html
+https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 
-当前最新版本是 12.5.6-5528349，下载下来的文件为 `VMware-Workstation-Full-12.5.6-5528349.x86_64.bundle` 。
+当前最新版本是`14.1.1`，下载下来的文件为 `VMware-Workstation-Full-14.1.1-7528167.x86_64.bundle` 。
 
 > 注： vmware 官网直接下载的速度非常慢，建议从其他下载网站下载，或者用百度云离线下载。
 
@@ -17,8 +17,8 @@ https://www.vmware.com/products/workstation-for-linux.html
 执行下面命令开始安装：
 
 ```bash
-sudo chmod +x VMware-Workstation-Full-12.5.6-5528349.x86_64.bundle
-sudo ./VMware-Workstation-Full-12.5.6-5528349.x86_64.bundle
+sudo chmod +x VMware-Workstation-Full-14.1.1-7528167.x86_64.bundle
+sudo ./VMware-Workstation-Full-14.1.1-7528167.x86_64.bundle
 ```
 
 然后在打开的图形界面中，开始安装：
@@ -26,7 +26,7 @@ sudo ./VMware-Workstation-Full-12.5.6-5528349.x86_64.bundle
 1. 接受两个协议
 2. 是否要检查更新，这里选no，本来我们下载的就是最新的
 3. ......
-4. 安装序列号：1F04Z-6D111-7Z029-AV0Q4-3AEH8 或者 5A02H-AU243-TZJ49-GTC7K-3C61N。
+4. 安装序列号：VF19H-8YY5L-48DQY-JEWNG-YPKF6。
 
 等待安装完成。
 
