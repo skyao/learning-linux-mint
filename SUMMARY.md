@@ -6,6 +6,7 @@
     * [Nvidia显卡](installation/hardware/nvidia_graph.md)
     * [AMD显卡](installation/hardware/amd_graph.md)
     * [Intel显卡](installation/hardware/intel_graph.md)
+    * [挂载Windows盘符](installation/hardware/mount_windows_disk.md)
     * [fsck硬盘检查](installation/hardware/fsck.md)
   * [系统设置](installation/system/index.md)
     * [快捷键修改](installation/system/hotkey.md)
