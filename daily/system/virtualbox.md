@@ -15,6 +15,8 @@ https://www.virtualbox.org/wiki/Downloads
 
 ## VirtualBox5.2
 
+> 备注：在新的Linux Mint 18.3并更新所有内容到最新的版本中，可以直接安装。下面的内容留着备用。
+
 5.2版本安装要麻烦一些，主要是5.2要求libqt5core5a的版本比较高：
 
 ![](images/virtualbox-error.jpg)

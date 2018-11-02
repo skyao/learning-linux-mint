@@ -22,5 +22,6 @@ Remmina 是一个远程桌面软件。
 
 安装完成之后, 打开 remmina, "connection" -> "new", Protocol 选 "RDP - Remote Desktop Protocol", 设置链接参数和账号, 就可以连接到 windows 桌面.
 
+ubuntu18.04
 
-
+https://www.techrepublic.com/article/how-to-enable-remote-desktop-connections-in-ubuntu-18-04/
