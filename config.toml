@@ -1,0 +1,140 @@
+baseurl = "http://localhost:1313/"
+languageCode = "zh-cn"
+uglyurls = true
+relativeURLs = false
+title = "Linux Mint学习笔记"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+preserveTaxonomyNames = true
+disablePathToLower = true
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = "c7442f5794ea2abb71c6ff05dc0b8779"
+
+[params]
+# General information
+    author = "敖小剑"
+    keywords = "Linux Mint,学习笔记,敖小剑,主题"
+    description = "Linux Mint是基于Debian和Ubuntu的 Linux 发行版。"
+    copyright = "版权所有，转载请注明出处"
+    
+    # Repository
+    provider = "GitHub"
+    repo_url = "https://github.com/skyao/learning-linux-mint"
+    
+    version = ""
+    logo = "images/logo.png"
+    favicon = ""
+    
+    permalink = "#"
+    
+    # reward button, comment this to disable it
+    reward = true
+    
+    # Custom assets
+    custom_css = []
+    custom_js  = []
+    
+    # Syntax highlighting theme
+    highlight_css  = ""
+    
+    [params.palette]
+    	primary = "red"
+    	accent  = "teal"
+    
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+[social]
+	twitter = ""
+	github  = "skyao"
+	email   = "aoxiaojian@gmail.com"
+
+[[menu.main]]
+	name   = "前言"
+	url    = "/"
+	weight = 1
+
+[[menu.main]]
+	name   = "安装"
+	identifier = "installation"
+	url    = "/installation/"
+	weight = 100
+
+[[menu.main]]
+	name   = "硬件配置"
+	identifier = "installation-hardware"
+	parent = "installation"
+	url    = "/installation/hardware/"
+	weight = 110
+
+[[menu.main]]
+	name   = "系统设置"
+	identifier = "installation-system"
+	parent = "installation"
+	url    = "/installation/system/"
+	weight = 120
+
+[[menu.main]]
+	name   = "硬件与监控"
+	identifier = "hardware"
+	url    = "/hardware/"
+	weight = 200
+
+[[menu.main]]
+	name   = "日常软件"
+	identifier = "daily"
+	url    = "/daily/"
+	weight = 300
+
+[[menu.main]]
+	name   = "编辑器软件"
+	identifier = "daily-editor"
+	parent = "daily"
+	url    = "/daily/editor/"
+	weight = 310
+
+[[menu.main]]
+	name   = "工具类软件"
+	identifier = "daily-tool"
+	parent = "daily"
+	url    = "/daily/tool/"
+	weight = 320
+
+[[menu.main]]
+	name   = "系统类软件"
+	identifier = "daily-system"
+	parent = "daily"
+	url    = "/daily/system/"
+	weight = 330
+
+[[menu.main]]
+	name   = "网络类软件"
+	identifier = "daily-network"
+	parent = "daily"
+	url    = "/daily/network/"
+	weight = 340
+
+[[menu.main]]
+	name   = "即时通讯软件"
+	identifier = "daily-im"
+	parent = "daily"
+	url    = "/daily/im/"
+	weight = 360
+
+[[menu.main]]
+	name   = "多媒体软件"
+	identifier = "daily-media"
+	parent = "daily"
+	url    = "/daily/media/"
+	weight = 370
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
+
+
