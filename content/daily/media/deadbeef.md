@@ -1,4 +1,12 @@
-# DeadBeef
+---
+date: 2018-11-07T13:05:00+08:00
+title: DeadBeef
+menu:
+  main:
+    parent: "daily-media"
+weight: 371
+description : "DeadBeef"
+---
 
 选择安装 deadbeef 的首要原因，是它支持 DSD 格式！
 

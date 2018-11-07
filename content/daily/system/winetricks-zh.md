@@ -1,4 +1,12 @@
-# winetricks
+---
+date: 2018-11-07T13:05:00+08:00
+title: winetricks
+menu:
+  main:
+    parent: "daily-system"
+weight: 333
+description : "winetricks"
+---
 
 这是一个 winetricks 的修改版，添加了一些国内常用的 windows 应用支持，以弥补官方版 winetricks 对国内应用支持不足的情况。
 

@@ -1,4 +1,12 @@
-# Vmware
+---
+date: 2018-11-07T13:05:00+08:00
+title: Vmware
+menu:
+  main:
+    parent: "daily-system"
+weight: 331
+description : "Vmware"
+---
 
 Vmware 支持 linux。对于某些需要使用 windows 软件的场景，安装 vmware 后使用虚拟机安装 windows 可以用来解决一些特别的场景。
 

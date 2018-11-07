@@ -1,4 +1,12 @@
-# audacious
+---
+date: 2018-11-07T13:05:00+08:00
+title: Audacious
+menu:
+  main:
+    parent: "daily-media"
+weight: 372
+description : "Audacious"
+---
 
 ## 介绍
 

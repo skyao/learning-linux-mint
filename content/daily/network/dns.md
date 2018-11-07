@@ -1,8 +1,18 @@
-# 设置DNS
+---
+date: 2018-11-07T13:05:00+08:00
+title: 设置DNS
+menu:
+  main:
+    parent: "daily-network"
+weight: 346
+description : "设置DNS"
+---
 
 设置阿里的DNS，提高网络响应速度, 实测效果明显。
 
-## 做法
+> 备注：下面的方法在ubuntu18.04、linux mint 19下无法使用。
+
+### 做法
 
 打开终端执行:
 

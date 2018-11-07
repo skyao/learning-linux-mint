@@ -1,3 +1,13 @@
+---
+date: 2018-11-07T09:05:00+08:00
+title: variety
+menu:
+  main:
+    parent: "daily-tool"
+weight: 326
+description : "variety"
+---
+
 # variety
 
 ### 介绍

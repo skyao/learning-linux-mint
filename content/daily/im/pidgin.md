@@ -1,4 +1,12 @@
-# Pidgin
+---
+date: 2018-11-07T13:05:00+08:00
+title: Pidgin
+menu:
+  main:
+    parent: "daily-im"
+weight: 362
+description : "Pidgin"
+---
 
 Linux Mint 自带 pidgin，版本是 2.10。
 

@@ -1,4 +1,13 @@
-# 搜狗输入法
+---
+date: 2018-11-07T09:05:00+08:00
+title: 搜狗输入法
+menu:
+  main:
+    parent: "daily-tool"
+weight: 322
+description : "搜狗输入法"
+---
+
 
 ## 安装
 
@@ -8,13 +17,13 @@
 
 	http://pinyin.sogou.com/linux/?r=pinyin
 
-	最新版本已经支持 Ubuntu12.04、14.04及16.04，而且对 linux mint 18 的支持非常好。
+	最新版本已经支持 Ubuntu12.04、14.04及16.04，而且对 linux mint 18 的支持非常好。对于 linux mint 19/ubuntu 18.04, 虽然没有写明支持，但是实际安装使用没有问题。
 
 2. 在终端中执行命令：
 
 	```bash
 	sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
-    ```
+   ```
 
 3. 重启系统，完成安装
 
@@ -52,4 +61,4 @@
 
 注意：尝试过重新启动搜狗输入法，无效，还是需要重启机器。
 
-
+##### 

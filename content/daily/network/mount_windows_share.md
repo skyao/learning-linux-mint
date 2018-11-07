@@ -1,4 +1,12 @@
-# 挂载 windows 共享目录
+---
+date: 2018-11-07T13:05:00+08:00
+title: 挂载 windows 共享目录
+menu:
+  main:
+    parent: "daily-network"
+weight: 348
+description : "挂载 windows 共享目录"
+---
 
 为了方便使用 windows 共享的目录，最好能直接 mount 进来。
 

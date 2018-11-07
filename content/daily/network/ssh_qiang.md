@@ -1,6 +1,12 @@
-# SSH代理服务器
-
-tags:代理服务器,翻墙
+---
+date: 2018-11-07T13:05:00+08:00
+title: SSH代理服务器
+menu:
+  main:
+    parent: "daily-network"
+weight: 344
+description : "SSH代理服务器"
+---
 
 SSH 可以实现最为快捷的代理服务器，在没有其他代理服务器软件的情况下，可以作为一个临时解决方案使用。
 

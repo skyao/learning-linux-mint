@@ -1,4 +1,12 @@
-# mplayer
+---
+date: 2018-11-07T13:05:00+08:00
+title: mplayer
+menu:
+  main:
+    parent: "daily-media"
+weight: 374
+description : "mplayer"
+---
 
 ## 介绍
 

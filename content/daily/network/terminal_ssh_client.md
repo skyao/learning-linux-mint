@@ -1,10 +1,18 @@
-# 使用终端做ssh client
+---
+date: 2018-11-07T13:05:00+08:00
+title: 使用终端做ssh client
+menu:
+  main:
+    parent: "daily-network"
+weight: 345
+description : "使用终端做ssh client"
+---
 
 发现 putty 和 Remmina 做 ssh 客户端都不是太好用, 远不如 windows 平台上的 securyCrt 和 putty.
 
 后来看到很多人都推荐直接用linux的终端做 ssh client, 简单敲个 "ssh server_name" 就连上去了，体验上也和和本地一致。
 
-## 自动登录
+### 自动登录
 
 为了减少每次敲击密码的麻烦, 还可以通过authorized_keys的方式来自动登录：
 

@@ -1,8 +1,18 @@
-# Haroopad
+---
+date: 2018-11-07T08:05:00+08:00
+title: Haroopad
+menu:
+  main:
+    parent: "daily-editor"
+weight: 312
+description : "Haroopad安装"
+---
 
 Haroopad 是一个优秀的 markdown 编辑器，非常好用。
 
-## 下载
+> 备注：最近换成Typora了，更喜欢Typora的编辑方式。
+
+###下载
 
 从 Haroopad 官方网站下载：
 
@@ -12,11 +22,11 @@ Haroopad 支持 windows，mac 和 linux， 非常难得。
 
 下载 `v0.13.1-x64.deb` 即可。
 
-## 安装
+### 安装
 
 安装简单,直接运行下载好的 haroopad-v0.13.1-x64.deb 就可以了.
 
-## 设置
+### 设置
 
 在高分辨屏幕(3k或者4k)下，Haroopad 的默认字体显得太小，需要设置。
 

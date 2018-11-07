@@ -1,4 +1,12 @@
-# 酷我音乐
+---
+date: 2018-11-07T13:05:00+08:00
+title: 酷我音乐
+menu:
+  main:
+    parent: "daily-media"
+weight: 373
+description : "酷我音乐"
+---
 
 酷我音乐的 linux 客户端，linux下难得一见的好东西，非常优秀的在线音乐播放器。
 

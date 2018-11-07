@@ -1,6 +1,12 @@
-# polipo
-
-tags: polipo
+---
+date: 2018-11-07T13:05:00+08:00
+title: 全局代理
+menu:
+  main:
+    parent: "daily-network"
+weight: 350
+description : "全局代理"
+---
 
 linux 下的 shadowsocks 不提供全局代理的功能，因此不得不寻找其他办法。
 
@@ -35,7 +41,7 @@ linux 下的 shadowsocks 不提供全局代理的功能，因此不得不寻找�
 
 	```bash
 	genpac -p "SOCKS5 127.0.0.1:11080" --gfwlist-proxy="SOCKS5 127.0.0.1:11080" --gfwlist-url=https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt --output="/home/sky/work/soft/pac/autoproxy.pac"
-    ```
+   ```
 
 4. 网络设置中，"网络代理" 设置为 "自动设置"
 
@@ -64,7 +70,7 @@ polipo 安装好之后，在终端执行命令时加入 `http_proxy=http://local
 	```bash
     alias hp="http_proxy=http://localhost:8123"
     alias sp="all_proxy=http://localhost:11080"
-    ```
+   ```
 
 	需要时在命令前加 `hp` 或者 `hp` 即可，如 `hp curl ip.gs` 或 `sp curl ip.gs`。
 
@@ -75,7 +81,7 @@ polipo 安装好之后，在终端执行命令时加入 `http_proxy=http://local
 	```bash
     export http_proxy=http://localhost:8123
     export all_proxy=http://localhost:11080
-    ```
+   ```
 
 这样 shadowsocks 的 socks5 代理 和 polipo 的 http 代理配置，就可以覆盖绝大部分情况了。
 

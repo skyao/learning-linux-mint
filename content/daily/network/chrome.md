@@ -1,6 +1,12 @@
-# Google chrome 浏览器
-
-tags:翻墙,浏览器
+---
+date: 2018-11-07T13:05:00+08:00
+title: Chrome浏览器
+menu:
+  main:
+    parent: "daily-network"
+weight: 347
+description : "Google chrome 浏览器"
+---
 
 chrome 浏览器个人最喜欢的浏览器。
 

@@ -1,4 +1,12 @@
-# 网易云音乐
+---
+date: 2018-11-07T13:05:00+08:00
+title: 网易云音乐
+menu:
+  main:
+    parent: "daily-media"
+weight: 375
+description : "网易云音乐"
+---
 
 最喜欢的在线音乐播放器了, 之前没有linux版本，只能通过 wine 来安装，后来网易终于出了 linux 版本，开心 :)
 

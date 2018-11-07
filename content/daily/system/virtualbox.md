@@ -1,4 +1,12 @@
-# VirtualBox
+---
+date: 2018-11-07T13:05:00+08:00
+title: VirtualBox
+menu:
+  main:
+    parent: "daily-system"
+weight: 332
+description : "VirtualBox"
+---
 
 ## VirtualBox5.1
 

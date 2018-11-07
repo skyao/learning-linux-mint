@@ -1,6 +1,12 @@
-# Remmina
-
-tags:远程桌面
+---
+date: 2018-11-07T13:05:00+08:00
+title: Remmina
+menu:
+  main:
+    parent: "daily-network"
+weight: 341
+description : "Remmina"
+---
 
 Remmina 是一个远程桌面软件。
 

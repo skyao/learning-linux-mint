@@ -1,4 +1,12 @@
-# Typora
+---
+date: 2018-11-07T08:05:00+08:00
+title: Typora
+menu:
+  main:
+    parent: "daily-editor"
+weight: 313
+description : "Typora安装"
+---
 
 非常漂亮的一个markdown编辑器，和haroopad的左右两栏不同，typora是直接在一个界面中进行编辑和渲染。
 

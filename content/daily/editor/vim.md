@@ -1,8 +1,16 @@
-# vim
+---
+date: 2018-11-07T08:05:00+08:00
+title: Vim
+menu:
+  main:
+    parent: "daily-editor"
+weight: 311
+description : "vim安装"
+---
 
 Vim 是超经典的文本编辑器。
 
-## 安装
+### 安装
 
 可以直接用 软件管理器 安装Vim。
 

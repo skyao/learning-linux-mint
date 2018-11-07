@@ -1,6 +1,12 @@
-# Gnome-do
-
-tags:快速启动
+---
+date: 2018-11-07T09:05:00+08:00
+title: Gnome-do
+menu:
+  main:
+    parent: "daily-tool"
+weight: 321
+description : "Gnome-do安装"
+---
 
 gnome-do 是一个很轻巧的应用程序启动器。
 

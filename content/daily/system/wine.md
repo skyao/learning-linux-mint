@@ -1,4 +1,12 @@
-# wine
+---
+date: 2018-11-07T13:05:00+08:00
+title: wine
+menu:
+  main:
+    parent: "daily-system"
+weight: 333
+description : "wine"
+---
 
 wine 是 Microsoft windows 兼容层 (windows compatibility layer), 可以在linux上跑起来一些 windows 下的软件,对于某些只有 windows 版本的软件也是一种选择.
 

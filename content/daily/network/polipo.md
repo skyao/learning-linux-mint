@@ -1,6 +1,12 @@
-# polipo
-
-tags: polipo
+---
+date: 2018-11-07T13:05:00+08:00
+title: polipo
+menu:
+  main:
+    parent: "daily-network"
+weight: 349
+description : "polipo"
+---
 
 shadowsock 是 socks5 的代理，有些程序对 socks5 的支持不好，此时需要提供额外的 http 代理。
 
@@ -42,7 +48,7 @@ sudo service polipo restart
 
 	```bash
     alias hp="http_proxy=http://localhost:8123"
-    ```
+   ```
 
 	需要时在命令前加 `hp` 即可，如 `hp curl ip.gs`。
 
@@ -52,6 +58,6 @@ sudo service polipo restart
 
 	```bash
     export http_proxy=http://localhost:8123
-    ```
+   ```
 
 

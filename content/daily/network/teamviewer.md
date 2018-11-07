@@ -1,4 +1,12 @@
-# TeamViewer 远程桌面
+---
+date: 2018-11-07T13:05:00+08:00
+title: TeamViewer
+menu:
+  main:
+    parent: "daily-network"
+weight: 342
+description : "TeamViewer"
+---
 
 TeamViewer 是广泛使用的远程桌面，提供 linux 版本。
 

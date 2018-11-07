@@ -1,4 +1,12 @@
-# Lync 兼容方案
+---
+date: 2018-11-07T13:05:00+08:00
+title: Lync 兼容方案
+menu:
+  main:
+    parent: "daily-im"
+weight: 363
+description : "Lync 兼容方案"
+---
 
 Lync (后来被微软收购之后改名为 Skype for business) 没有 linux 版本，但是我们可以通过 pidgin 这个IM通用外壳配置 sipe 插件来实现和 Lync 的兼容和相互通讯。
 

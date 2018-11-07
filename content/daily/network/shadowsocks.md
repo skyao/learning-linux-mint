@@ -1,6 +1,12 @@
-# shadowsocks
-
-tags: shadowsocks
+---
+date: 2018-11-07T13:05:00+08:00
+title: shadowsocks
+menu:
+  main:
+    parent: "daily-network"
+weight: 343
+description : "shadowsocks"
+---
 
 ## linux客户端
 

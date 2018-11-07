@@ -1,4 +1,12 @@
-# Skype for Linux Alpha
+---
+date: 2018-11-07T13:05:00+08:00
+title: Skype for Linux
+menu:
+  main:
+    parent: "daily-im"
+weight: 361
+description : "Skype for Linux"
+---
 
 Skype for Linux Alpha 是Skype for Linux 新版本的早期版本。
 
