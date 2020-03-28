@@ -8,6 +8,39 @@ weight: 112
 description : "介绍Linux Mint下AMD显卡的驱动安装"
 ---
 
+使用 amd rx580 显卡在 19.3 版本下安装驱动。
+
+背景：操作系统安装完成之后，默认已经安装好amd 显卡驱动，不过总感觉有点不对，手工再安装一边。
+
+官方下载网站：
+
+https://www.amd.com/zh-hans/support
+
+选择型号，跳转到下载页面，选择 “ Ubuntu x86 64 位 ”， Radeon™ Software for Linux® Driver for Ubuntu 18.04.3
+
+- Revision Number：19.50
+- File Size：308 MB
+- 发布日期：2019年12月19日
+
+版本时间还挺新，但是只支持到18.04, 这个有点不及时。
+
+下载之后，解压缩，进入目录，执行命令：
+
+```bash
+./amdgpu-pro-install
+
+# 如果遇到报错说驱动已经安装，执行下面命令先删除现有版本再安装
+# /usr/bin/amdgpu-pro-uninstall 
+
+安装到最后，有个警告，看来是内核太新
+WARNING: amdgpu dkms failed for running kernel
+
+```
+
+--------------------------------------
+
+以下内容已经过期。
+
 备注1：这是Linux Mint18下的记录，Linux Mint 19下我还有没有使用过AMD显卡。
 
 备注2： AMD 的linux 驱动支持烂的要死，最好别用 AMD 的显卡！
