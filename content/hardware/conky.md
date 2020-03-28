@@ -25,7 +25,7 @@ Conky 是一个轻量级的系统监控工具，非常适合日常用来监控cp
 如果发现找不到 `Conky-manager`，请先添加ppa：
 
 ```bash
-sudo add-apt-repository ppa:teejee2008/ppa
+sudo add-apt-repository ppa:mark-pcnetspec/conky-manager-pm9
 sudo apt-get update
 sudo apt-get install conky-manager
 ```
@@ -73,9 +73,11 @@ widget 样式可以详细调节，如下图所示：
 ```bash
 minimum_size 0 0
 TEXT
-${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=60}${time %I:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=160}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}
+${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=160}${time %d} ${voffset -15}${color EAEAEA}${font Ubuntu Regular Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font Ubuntu Regular Inspira:pixelsize=58}${offset -148}${time %A}${font}
 ${voffset 1}${offset 12}${font Ubuntu:pixelsize=36}${color FFA300}HD ${offset 9}$color${fs_free /} / ${fs_size /}${offset 30}${color FFA300}RAM ${offset 9}$color$mem / $memmax${offset 30}${color FFA300}CPU ${offset 9}$color${cpu cpu0}%
 ```
+
+特别注意：如果出现乱码，就需要修改字体，默认GE，改为 Ubuntu Regular 之类。
 
 举例，gothem 在我的笔记本上(3k分辨率 + 双倍dpi)显示不正常，文件重叠，修改之后就正常了。
 
