@@ -8,7 +8,7 @@ weight: 112
 description : "介绍Linux Mint下AMD显卡的驱动安装"
 ---
 
-使用 amd rx580 显卡在 19.3 版本下安装驱动。
+使用 amd rx580 显卡在 19.3 版本下安装驱动，更新于 2020年3月底。写代码还是喜欢linux系统，捣鼓了一整子黑苹果，又回到linux mint的怀抱了。
 
 背景：操作系统安装完成之后，默认已经安装好amd 显卡驱动，不过总感觉有点不对，手工再安装一边。
 
@@ -22,8 +22,6 @@ https://www.amd.com/zh-hans/support
 - File Size：308 MB
 - 发布日期：2019年12月19日
 
-版本时间还挺新，但是只支持到18.04, 这个有点不及时。
-
 下载之后，解压缩，进入目录，执行命令：
 
 ```bash
@@ -36,6 +34,14 @@ https://www.amd.com/zh-hans/support
 WARNING: amdgpu dkms failed for running kernel
 
 ```
+
+" amdgpu dkms failed for running kernel" 这是关键
+
+- https://community.amd.com/thread/248166： 这个问题很多人遇到了，根本原因在于这个版本对 linux 5.0以上内核不支持。
+- https://www.amd.com/en/support/kb/release-notes/rn-rad-lin-20-10-early-preview： 这个是新版本的驱动，支持 linux 5.0 内核，不过还是一个早期预览版本。
+- https://amdgpu-install.readthedocs.io/en/latest/install-installing.html： 安装文档，没细看，直接 `./amdgpu-pro-install` 搞定就不去研究了。
+
+最后的结果：这个 20.10 早期预览版本在 linut mint 19.3 (基于18.04.1版本的Ubuntu) + 5.3.0-42-generic 内核（2020年3月底最新版本）上顺利安装成功。
 
 --------------------------------------
 
