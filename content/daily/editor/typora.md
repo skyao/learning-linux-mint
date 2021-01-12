@@ -12,7 +12,9 @@ description : "Typora安装"
 
 https://typora.io/
 
-难得有linux支持，安装方式：
+可以通过软件管理器安装。
+
+也可以参考官网文档说明，安装方式：
 
 ```bash
 # optional, but recommended
