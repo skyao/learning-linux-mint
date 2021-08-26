@@ -6,7 +6,7 @@ Linux Mint是一份基于Debian和Ubuntu的 Linux 发行版。其目标是提供
 
 Linux Mint是对用户友好而功能强大的操作系统。它诞生的目的是为家庭用户和企业提供一个免费的，易用的，舒适而优雅的桌面操作系统。
 
-个人对Linux Mint非常喜欢，已经成为目前主力操作系统(Linux Mint 为主，windows 10为备，双系统)。这份Linux Mint学习笔记, 记录Linux Mint (Linux Mint 19 Cinnamon 版本) 的学习过程和日常使用.
+个人对Linux Mint非常喜欢，已经成为目前主力操作系统之一。这份Linux Mint学习笔记, 记录Linux Mint (Linux Mint 20.2 Cinnamon 版本) 的学习过程和日常使用.
 
 ### 访问方式
 
