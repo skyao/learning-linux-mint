@@ -1,12 +1,15 @@
 ---
-title: "Chrome浏览器"
-linkTitle: "Chrome"
-weight: 457
+title: "[归档]Chrome浏览器"
+linkTitle: "[归档]Chrome"
+weight: 459
 date: 2021-08-26
 description: >
-  Google chrome 浏览器
+  Google chrome，曾经是个人最喜欢的浏览器，现被 Edge 取代
 ---
 
+{{% pageinfo color="primary" %}}
+归档说明：现被 Edge 取代
+{{% /pageinfo %}}
 
 chrome 浏览器个人最喜欢的浏览器。
 

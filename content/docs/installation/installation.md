@@ -1,24 +1,24 @@
 ---
-title: "Linux Mint的安装概述"
-linkTitle: "安装概述"
+title: "Linux Mint的安装过程"
+linkTitle: "安装过程"
 weight: 201
 date: 2021-08-26
 description: >
-  Linux Mint 22.02的安装概述
+  Linux Mint 22.02的安装过程
 ---
 
 
-Linux Mint 19 的安装比较简单，安装速度也非常快。
+Linux Mint 20.02 的安装比较简单，安装速度也非常快。
 
 但是期间还是有一些事情要小心。
 
 ## 安装前准备
 
-从 Linux Mint 的下载页面下载  Cinnamon 的 64位版本。
+从 Linux Mint 的下载页面下载 Linux Mint 20.2 Uma 的 Cinnamon 的64位版本。
 
 https://linuxmint.com/download.php
 
-之后使用各种工具将下载下来的 ISO 文件制作成启动 U 盘进行安装。
+之后使用各种工具将下载下来的 ISO 文件制作成启动 U 盘进行安装，推荐 rufus。
 
 ## 安装
 
@@ -38,7 +38,9 @@ https://linuxmint.com/download.php
 
 安装过程在设置用户名密码时，有个是否自动登录的选项，如果是自己机器平时也不需要考虑安全性，选上，可以省事加开机更快。
 
-## 更新源
+## 安装完操作
+
+### 设置软件源
 
 安装完成，进入桌面之后的第一件事情，就是设置软件源。
 
@@ -46,8 +48,22 @@ https://linuxmint.com/download.php
 
 ![](images/software_sources.jpg)
 
-选择时会自动提供速度测试，可以根据测试出来的速度情况选择一个速度比较好的源，我这边选择的是 ustc 。
+选择时会自动提供速度测试，可以根据测试出来的速度情况选择一个速度比较好的源，我这边选择的是 ustc 和 dgut 。
 
-![](images/speed_test.jpg)
+{{% alert title="Warning" color="warning" %}}
+注意一定要先更新软件源之后，再开始各种配置和安装，否则国外源时速度不好时非常浪费时间。
+{{% /alert %}}
 
-注意一定要先更新源之后，再开始各种配置和安装，避免国外源时速度不好。
+### 更新系统和内核
+
+在设置好软件源之后，再使用操作系统自带的 "更新管理器" 进行系统更新，包括内核更新。
+
+{{% pageinfo color="primary" %}}
+我个人习惯是直接更新到最新版本的内核，如 `5.11.0-27`
+{{% /pageinfo %}}
+
+### 额外提示
+
+`Alt+F7` 是移动窗口的快捷键，在某些特殊情况下，如果屏幕分辨率因故被设置的太低，会出现窗口太长而无法在屏幕上显示完整，导致某些关键的输入和按钮在屏幕外点不到。
+
+此时就需要使用 `Alt+F7` 快捷键来移动窗口，不然被卡死会非常憋屈。

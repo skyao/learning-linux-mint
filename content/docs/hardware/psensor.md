@@ -1,12 +1,15 @@
 ---
-title: "Psensor"
-linkTitle: "Psensor"
-weight: 350
+title: "[归档]Psensor"
+linkTitle: "[归档]Psensor"
+weight: 339
 date: 2021-08-26
 description: >
-  "Psensor 是 Linux 下的硬件温度监控工具"
+  Psensor 是 Linux 下的硬件温度监控工具
 ---
 
+{{% pageinfo color="primary" %}}
+归档说明：已经很久没有在笔记本上折腾linux了，台式机没必要。
+{{% /pageinfo %}}
 
 Psensor 是一个硬件温度监控工具。
 

@@ -4,7 +4,7 @@ linkTitle: "System Monitor"
 weight: 320
 date: 2021-08-26
 description: >
-  "System Monitor 是 Linux Mint 自带的系统监控工具"
+  System Monitor 是 Linux Mint 自带的系统监控工具
 ---
 
 System Monitor 是 Linux Mint 自带的系统监控工具，在 "开始菜单" -> "系统管理" -> "System Monitor" 打开。

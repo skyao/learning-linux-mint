@@ -1,10 +1,10 @@
 ---
-title: "系统设置概述"
-linkTitle: "概述"
+title: "取消PPA仓库"
+linkTitle: "取消PPA仓库"
 weight: 221
 date: 2021-08-26
 description: >
-  Linux Mint安装时的系统设置概述
+  取消PPA仓库以加速apt-get update的速度
 ---
 
 

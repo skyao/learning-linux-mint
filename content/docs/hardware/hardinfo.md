@@ -1,10 +1,10 @@
 ---
 title: "Hardinfo"
 linkTitle: "Hardinfo"
-weight: 310
+weight: 313
 date: 2021-08-26
 description: >
-  "硬件信息查看工具Hardinfo介绍"
+  硬件信息查看工具Hardinfo介绍
 ---
 
 hardinfo 是一个硬件信息查看工具。

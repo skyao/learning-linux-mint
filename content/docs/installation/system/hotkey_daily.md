@@ -1,10 +1,10 @@
 ---
 title: "修改后的Linux Mint的常用快捷键"
-linkTitle: "常用快捷键"
+linkTitle: "[参考]常用快捷键"
 weight: 223
 date: 2021-08-26
 description: >
-  修改后的Linux Mint的常用快捷键
+  列出常用的快捷键，方便记忆
 ---
 
 ## 窗口快捷键
@@ -28,7 +28,7 @@ description: >
 ### 窗口定位
 
 - Alt+F8：改变窗口大小
-- Alt+F7: 移动窗口
+- Alt+F7: 移动窗口： 注意这个快捷键在某些关键时刻几乎可以用来救命
 
 ### 跨工作区
 

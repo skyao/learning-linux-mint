@@ -1,5 +1,5 @@
 ---
-title: "搜狗输入法"
+title: "安装搜狗输入法"
 linkTitle: "搜狗输入法"
 weight: 422
 date: 2021-08-26
@@ -13,15 +13,33 @@ description: >
 
 1. 进入搜狗输入法官网，下载 Linux 64位版本
 
-	http://pinyin.sogou.com/linux/?r=pinyin
+    https://pinyin.sogou.com/linux/
 
-	最新版本已经支持 Ubuntu12.04、14.04及16.04，而且对 linux mint 18 的支持非常好。对于 linux mint 19/ubuntu 18.04, 虽然没有写明支持，但是实际安装使用没有问题。
+    最新版本已经明确申明稳定支持 ubuntu 20.04
 
-2. 在终端中执行命令：
+    在终端中执行命令：
 
-	```bash
-	sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
-   ```
+    ```bash
+    sudo dpkg -i sogoupinyin_2.1.0.0086_amd64.deb
+    ```
+
+    当这样会失败，错误信息为：
+
+    ```
+    dpkg: regarding .../sogoupinyin_2.4.0.3469_amd64.deb containing sogoupinyin:
+    sogoupinyin breaks fcitx-ui-qimpanel
+    fcitx-ui-qimpanel (version 2.1.3-2build1) is present and installed.
+
+    dpkg: error processing archive /home/sky//sogoupinyin_2.4.0.3469_amd64.deb (--install):
+    installing sogoupinyin would break fcitx-ui-qimpanel, and
+    deconfiguration is not permitted (--auto-deconfigure might help)
+    ```
+
+	和 fcitx-ui-qimpanel 冲突，所以解决方法很简单，先卸载 fcitx-ui-qimpanel 再安装：
+	
+    ```bash
+    sudo apt-get remove fcitx-ui-qimpanel
+    ```
 
 3. 重启系统，完成安装
 

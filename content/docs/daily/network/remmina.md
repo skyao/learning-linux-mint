@@ -1,5 +1,5 @@
 ---
-title: "Remmina"
+title: "远程桌面软件Remmina"
 linkTitle: "Remmina"
 weight: 441
 date: 2021-08-26
@@ -7,7 +7,7 @@ description: >
   Remmina 是一个远程桌面软件。
 ---
 
-Remmina 是一个远程桌面软件。
+
 
 ## 安装
 

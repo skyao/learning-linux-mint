@@ -23,8 +23,4 @@ sudo apt-get update
 sudo apt-get install audacious
 ```
 
-## 其他
-
-webupd8 这个 PPA 中还有其他的包，基本都是更新到最新版本的：
-
-Packages in this PPA: audacious, ap-hotspot, awn-applet-radio, awn-applet-wm, calise, cmus, dockbarx, dockbarx-themes-extra, dropbox-share, emerald, exaile, fbmessenger, gnome-subtitles, gnome-window-applets, grsync, grive, gthumb, launchpad-getkeys, mc, mdm (Mint Display Manager), minitunes, minitube, musique, notifyosdconfig, nautilus-columns, powertop, ppa-purge, rosa-media-player, fixed pulseaudio-equalizer, subtitleeditor, syncwall, umplayer, unity-reboot, wimlib, youtube-dl, xfce4-dockbarx-plugin, xournal, yad, yarock and others. Almost all packages are updated to their latest version.
+> 备注：貌似外形也太不好看了。

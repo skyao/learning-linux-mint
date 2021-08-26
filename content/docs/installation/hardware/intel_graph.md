@@ -1,13 +1,17 @@
 ---
-title: " Intel显卡驱动安装"
-linkTitle: " Intel显卡"
-weight: 212
+title: "[归档]Intel显卡驱动安装"
+linkTitle: "[归档]Intel显卡"
+weight: 219
 date: 2021-08-26
 description: >
   介绍Linux Mint下Intel显卡的驱动安装
 ---
 
-备注：这是Linux Mint 18下的内容，Linux Mint 19尚未更新，按说19的内核版本已经是4.15了，应该不会有这些问题。
+{{% pageinfo color="primary" %}}
+归档说明：最近没有用Intel集成显卡
+{{% /pageinfo %}}
+
+> 备注：这是Linux Mint 18下的内容，Linux Mint 19尚未更新，按说19的内核版本已经是4.15了，应该不会有这些问题。
 
 虽说　linux mint 默认自带了 intel 集成显卡驱动，不过从实际使用情况看，这个驱动在节能方面表现应该不好。对比 windows 系统，在发热和续航时间上差距明显。
 

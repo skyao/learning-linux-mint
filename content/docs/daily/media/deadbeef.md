@@ -4,7 +4,7 @@ linkTitle: "DeadBeef"
 weight: 471
 date: 2021-08-26
 description: >
-  DeadBeef
+  DeadBeef音乐播放器，支持 DSD 格式
 ---
 
 
@@ -38,5 +38,5 @@ http://deadbeef.sourceforge.net/download.html
 
 如果 DAC 支持 DSD 格式，可以去掉这里的 Resampler ，直接将 352K 的信号输出给 DAC。
 
-> 注： 攒钱买 DSD 解码器中......
+
 

@@ -1,11 +1,15 @@
 ---
-title: "Nvidia显卡驱动安装"
-linkTitle: "Nvidia显卡"
-weight: 211
+title: "[归档]Nvidia显卡驱动安装"
+linkTitle: "[归档]Nvidia显卡"
+weight: 219
 date: 2021-08-26
 description: >
   介绍Linux Mint下Nvidia显卡的驱动安装
 ---
+
+{{% pageinfo color="primary" %}}
+归档说明：最近没用nvidia显卡
+{{% /pageinfo %}}
 
 ## 驱动安装
 

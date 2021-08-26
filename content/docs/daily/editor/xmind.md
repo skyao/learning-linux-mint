@@ -12,11 +12,12 @@ description: >
 
 从 xmindchina 官方网站下载：
 
-http://www.xmindchina.net/
+https://www.xmind.cn/download/
 
-Xmind 支持 windows，mac 和 linux，下载 linux 64位版本即可，如 ` xmind-7.5-update1-linux_amd64.deb`  即可。
+Xmind 支持 windows，mac 和 linux，下载 linux 64位版本即可，如 ` XMind-for-Linux-amd-64bit-11.0.1-202106220606.deb`  即可。
 
 
 ### 安装
 
-安装简单,直接安装下载好的` xmind-7.5-update1-linux_amd64.deb` 就可以了.
+直接安装下载好的` XMind-for-Linux-amd-64bit-11.0.1-202106220606.deb` 就可以了.
+

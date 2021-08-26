@@ -1,11 +1,15 @@
 ---
-title: "Cpufreqd"
-linkTitle: "Cpufreqd"
-weight: 330
+title: "[归档]Cpufreqd"
+linkTitle: "[归档]Cpufreqd"
+weight: 339
 date: 2021-08-26
 description: >
-  "Cpufreqd 是 Linux 下的CPU频率调节工具"
+  Cpufreqd 是 Linux 下的CPU频率调节工具
 ---
+
+{{% pageinfo color="primary" %}}
+归档说明：已经很久没有在笔记本上折腾linux了，台式机没必要。
+{{% /pageinfo %}}
 
 折腾 linux mint 的时候,发现linux系统节能方面表现不太好. 后来找到了cpufreqd这个工具, 使用后发现非常好用,可以自定义规则来满足各种情况下的cpu设定, 极度灵活。
 
