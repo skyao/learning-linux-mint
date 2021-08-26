@@ -16,3 +16,4 @@ https://www.microsoftedgeinsider.com/zh-cn/download/
 
 下载 microsoft-edge-dev_94.0.982.2-1_amd64.deb ，然后安装即可。
 
+/
