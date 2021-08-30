@@ -151,6 +151,8 @@ cp -r  mcOS-BS-White-Stock mcOS-Monterey-PinkDark mcOS-Monterey-PinkLight   ~/.l
 
 最后记得在开机自启动程序中加入 Plank，以便开机启动启动 Plank。
 
+> 补充：试用了几天Plank，发现这个组件会降低速度，影响体验，有时从Plank的dock上启动程序如终端会很慢。最后决定放弃dock，用回linux mint的面板。
+
 ### 安装 dash to dock
 
 dash to dock的安装要麻烦一些，以后有空再折腾。

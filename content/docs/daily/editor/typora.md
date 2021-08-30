@@ -50,10 +50,25 @@ sudo apt install typora=0.11.2-1
 
 - [Ubuntu通过apt-get安装指定版本和查询指定软件有多少个版本](https://www.cnblogs.com/EasonJim/p/7144017.html)
 
-## 配置
+## 配置字体
 
-Linux 下 typora 的字体不是太好看，感觉是用主体设置的字体，而不能通过系统或者typora来设置。
+Linux 下 typora 的字体不是太好看，而且字体是通过主题来设置的，并不能通过系统或者 typora来设置。
 
 这意味着如果要修改字体，则需要去修改主题文件。
 
-TODO： 稍后研究
+不过，typora 给了一个 "添加自定义css" 的方案，可以简单的搞定这个问题。
+
+打开主题所在的目录，如 `/home/sky/.config/Typora/themes` ，新建一个 `base.user.css` 文件，内容为：
+
+```css
+body {
+    font-family: "文泉驿等宽微米黑";
+}
+```
+
+这样就能修改所有主题的默认字体。
+
+参考：
+
+- [Add Custom CSS](https://support.typora.io/Add-Custom-CSS/)
+
