@@ -1,7 +1,7 @@
 ---
 title: "安装配置Samba文件共享"
 linkTitle: "Samba文件共享"
-weight: 446
+weight: 232
 date: 2021-08-26
 description: >
   在linux mint上安装Samba，进行文件共享
