@@ -46,6 +46,8 @@ sudo apt install typora=0.11.2-1
 
 然后就恢复正常了。
 
+> 后续更新：第二天这个有问题的版本就被下线了。
+
 参考:
 
 - [Ubuntu通过apt-get安装指定版本和查询指定软件有多少个版本](https://www.cnblogs.com/EasonJim/p/7144017.html)
@@ -64,6 +66,33 @@ Linux 下 typora 的字体不是太好看，而且字体是通过主题来设置
 body {
     font-family: "文泉驿等宽微米黑";
 }
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "文泉驿等宽微米黑";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "文泉驿等宽微米黑";
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+    font-family: "文泉驿等宽微米黑";
+}
+
 ```
 
 这样就能修改所有主题的默认字体。
