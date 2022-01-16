@@ -15,18 +15,33 @@ description: >
 
 https://www.amd.com/en/support
 
-选择 "Graphics" --> "AMD Redeon 6000 Series"  一路选择型号，然后点击"提交"。在结果中选择 "Ubuntu x86 64-Bit" ,
+选择 "Graphics" --> "AMD Redeon 6000 Series"  一路选择型号，然后点击"提交"。在结果中选择 "Ubuntu x86 64-Bit":
 
-![](images/amd-driver-download.jpg)
+> Radeon™ Software for Linux® installer version 21.40.1 for Ubuntu 20.04.3
 
-下载下来 amdgpu-pro-21.30-1290604-ubuntu-20.04.tar.xz，解压缩进入目录，执行:
+和以前的二进制安装文件不同，新版本的下载页面现在下载的只是一个驱动安装软件（installer），而不是驱动本身。
 
 ```bash
-cd amdgpu-pro-21.30-1290604-ubuntu-20.04
-sudo ./amdgpu-install
+sudo apt install linux-image-5.4.0-94-generic linux-headers-5.4.0-94-generic linux-modules-extra-5.4.0-94-generic
 ```
 
-一路安装即可。
+
+
+下载得到 `amdgpu-install_21.40.1.40501-1_all.deb` ，安装方式：
+
+```bash
+sudo apt-get install ./amdgpu-install_21.40.1.40501-1_all.deb
+```
+
+之后，执行
+
+```bash
+sudo amdgpu-install --opencl=rocr --vulkan=amdvlk -y --accept-eula
+```
+
+开始安装，下载速度超级慢。
+
+参考：https://amdgpu-install.readthedocs.io/en/latest/install-script.html#script-types
 
 ## 老显卡
 
