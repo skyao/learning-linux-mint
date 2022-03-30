@@ -1,7 +1,7 @@
 ---
 title: "AMD显卡驱动安装"
 linkTitle: "AMD显卡"
-weight: 212
+weight: 10
 date: 2021-08-26
 description: >
   介绍Linux Mint下AMD显卡的驱动安装
