@@ -59,3 +59,14 @@ Rich Go language support for Visual Studio Code
 
 
 
+## 配置
+
+### lunch.json
+
+变量参考：
+
+https://code.visualstudio.com/docs/editor/variables-reference
+
+比较常用的是：
+
+- ${workspaceFolder}
