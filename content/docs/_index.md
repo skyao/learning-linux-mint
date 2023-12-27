@@ -1,5 +1,5 @@
 ---
-title: "Learning Linux Mint"
+title: "Linux Mint学习笔记"
 linkTitle: "学习笔记"
 weight: 1
 menu:
