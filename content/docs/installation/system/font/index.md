@@ -67,7 +67,21 @@ sudo apt-get install fonts-wqy-microhei
 
 https://debian.pkgs.org/sid/debian-main-amd64/fonts-wqy-microhei_0.2.0-beta-3.1_all.deb.html
 
-打开菜单-->首选项--> 选择字体，一律修改成文泉驿等宽微米黑，字体大小也适当加大。
+打开菜单-->首选项--> 选择字体，默认字体设置如下：
+
+- Default Font: Ubuntu Regular 10
+- Desktop Font: Ubuntu Regular 10
+- Document Font: Sans Regular 10
+- Monospace Font: DejaVu Sans Mono Book 10
+- Window title front: Ubutu Medium 10
+
+一律修改成文泉驿等宽微米黑，字体大小也适当加大。
+
+- Default Font: Wenquanyi Micro Hei Regular 10
+- Desktop Font: Wenquanyi Micro Hei Regular 10
+- Document Font: Wenquanyi Micro Hei Regular 10
+- Monospace Font: Wenquanyi Micro Hei Mono Regular 10
+- Window title front: Wenquanyi Micro Hei Regular 10
 
 > 备注：如果找不到文泉驿字体，请执行 `sudo fc-cache  -fv` 命令刷新字体缓存。
 
@@ -86,3 +100,5 @@ https://debian.pkgs.org/sid/debian-main-amd64/fonts-wqy-microhei_0.2.0-beta-3.1_
 ### 设置命令行窗口字体
 
 打开命令行，"编辑" -> "首选项" 中勾选自定义自体，适当放大字体，默认12,可以考虑20。
+
+对比了 Ubuntu Mono / Monospace 等等宽字体，最后发现还是默认的 Monospace 比较好看，就不修改了。 

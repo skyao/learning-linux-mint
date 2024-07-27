@@ -30,6 +30,7 @@ sudo apt install synapse
 1. 登录时启动
 2. 取消勾选"显示通知区域图标"：没必要
 3. 激活快捷键设置为 gnome-do 时代我习惯的 `alt + g`
+4. Theme 设置为 "Doish"
 
 插件中过了一遍，把用不倒的关了。
 

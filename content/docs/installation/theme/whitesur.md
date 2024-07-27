@@ -9,9 +9,7 @@ description: >
 
 ## 介绍
 
-- https://snapcraft.io/install/whitesur-gtk-theme/mint：介绍
 - https://github.com/vinceliuice/WhiteSur-gtk-theme：主题作者的github
-- https://www.youtube.com/watch?v=Ul9YU9GcjZA： 安装方式我参考的这个视频，dock采用的是Plank而不是dash to dock。
 
 ![](https://github.com/vinceliuice/WhiteSur-gtk-theme/raw/pictures/pictures/macbook.png)
 
@@ -74,14 +72,6 @@ mkdir .icons
 
 >  备注：light和dark看喜欢，我一般喜欢设置 dark，长时间用不累眼。
 
-### 脚本自动安装主题
-
-也可以借助 WhiteSur 主题提供的脚本来帮忙快速安装主题所需的文件：
-
-https://github.com/vinceliuice/WhiteSur-gtk-theme
-
-在这里下载仓库的代码，然后解压缩之后，就可以通过 `.install.sh` 命令来进行主题安装。具体看网站的说明。
-
 ## 调整Linux Mint的面板
 
 在安装dock效仿macos之前，先要将Linux Mint的面板从默认的底部移动到顶部，将底部的空间让出来给 dock。
@@ -106,56 +96,7 @@ https://512pixels.net/projects/default-mac-wallpapers-in-5k/#jp-carousel-19693
 
 这个地址里面有mac各个版本的壁纸可供下载，5k/6k的分辨率足够清晰，下载 big sur 和 Monterey 经典的彩色壁纸。
 
-主题搞定！此时界面已经美化了很多。但还差一个重要的东西：macos 的 dock！
-
-## 安装Dock
-
-### 安装Plank
-
-plank的安装非常简单：
-
-```bash
-sudo apt install plank
-```
-
-然后执行命令 `plank &` 启动 Plank 就能看到效果了。
-
-为了和whitesur主题配置，还需要为 Plank 下载它自己的主题。
-
-地址1：https://www.gnome-look.org/p/1399398/
-
-下载文件：
-
-- mcOS-BS-White-Stock.zip：和big sur的壁纸配合
-
-地址2：https://www.gnome-look.org/p/1541094/
-
-下载文件：
-
-- mcOS-Monterey-PinkDark.zip ：和 monterey的 pink dark 壁纸配合
-- mcOS-Monterey-PinkLight.zip：和 monterey的 pink light 壁纸配合
-
-解压复制下载来自的3个plank文件夹到下面的目录：
-
-```bash
-cp -r  mcOS-BS-White-Stock mcOS-Monterey-PinkDark mcOS-Monterey-PinkLight   ~/.local/share/plank/themes
-```
-
-然后执行 `plank --preferences` 打开 plank 的设置界面：
-
-- 主题：选择white stock配合big sur的壁纸，或者选择 monterey 配合 monterey 的壁纸。
-- 图标缩放: 关闭。我个人不喜欢那么花哨，不缩放了。
-- 图标尺寸： 64
-- 隐藏dock：设置为智能隐藏
-- 小部件：双击trash增加 回收站 / CPU Monitor / Applications 到dock中（如果要从dock中删除，直接左键按住拖出去dock就好）
-
-最后记得在开机自启动程序中加入 Plank，以便开机启动启动 Plank。
-
-> 补充：试用了几天Plank，发现这个组件会降低速度，影响体验，有时从Plank的dock上启动程序如终端会很慢。最后决定放弃dock，用回linux mint的面板。
-
-### 安装 dash to dock
-
-dash to dock的安装要麻烦一些，以后有空再折腾。
+主题搞定！此时界面已经美化了很多。
 
 ## 其他补充
 

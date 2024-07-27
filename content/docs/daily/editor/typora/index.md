@@ -18,7 +18,7 @@ https://typora.io/
 安装方式：
 
 ```bash
-wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+wget -qO - https://typora.io/linux/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/typora.asc
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
 sudo apt-get install typora
@@ -92,7 +92,40 @@ tt,
 var {
     font-family: "文泉驿等宽微米黑";
 }
+```
 
+如果linux mint安装时选择的是英文版本而不是中文版本，则需要设置为:
+
+```css
+body {
+    font-family: "WenQuanYi Micro Hei Mono Regular";
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "WenQuanYi Micro Hei Mono Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "WenQuanYi Micro Hei Mono Regular";
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+    font-family: "WenQuanYi Micro Hei Mono Regular";
+}
 ```
 
 这样就能修改所有主题的默认字体。
