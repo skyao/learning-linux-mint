@@ -1,7 +1,7 @@
 ---
 title: "使用终端做ssh client"
 linkTitle: "终端做ssh client"
-weight: 445
+weight: 50
 date: 2021-08-26
 description: >
   使用终端做ssh client

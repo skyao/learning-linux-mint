@@ -1,7 +1,7 @@
 ---
 title: "挂载 windows 共享目录"
 linkTitle: "挂载 windows 共享目录"
-weight: 448
+weight: 80
 date: 2021-08-26
 description: >
   为了方便使用 windows 共享的目录，最好能直接 mount 进来。

@@ -1,7 +1,7 @@
 ---
 title: "[归档]SSH代理服务器"
 linkTitle: "[归档]SSH代理服务器"
-weight: 449
+weight: 999
 date: 2021-08-26
 description: >
   SSH 可以实现最为快捷的代理服务器，在没有其他代理服务器软件的情况下，可以作为一个临时解决方案使用。

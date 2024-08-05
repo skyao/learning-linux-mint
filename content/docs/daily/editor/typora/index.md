@@ -1,7 +1,7 @@
 ---
 title: "Typora"
 linkTitle: "Typora"
-weight: 413
+weight: 10
 date: 2021-08-26
 description: >
   非常漂亮的一个markdown编辑器，多平台通用

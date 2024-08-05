@@ -1,7 +1,7 @@
 ---
 title: "Teams"
 linkTitle: "Teams"
-weight: 447
+weight: 70
 date: 2021-08-26
 description: >
   安装微软Teams
