@@ -1,7 +1,7 @@
 ---
 title: "截图软件Shutter"
 linkTitle: "Shutter"
-weight: 424
+weight: 30
 date: 2021-08-26
 description: >
   shutter是linux下非常好用的一款截图软件，功能强大。

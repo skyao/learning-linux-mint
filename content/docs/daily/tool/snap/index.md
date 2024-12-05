@@ -1,7 +1,7 @@
 ---
 title: "[归档]软件安装工具snap"
 linkTitle: "[归档]snap"
-weight: 427
+weight: 99
 date: 2021-08-26
 description: >
   snap可以方便的安装各种软件

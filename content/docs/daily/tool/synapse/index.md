@@ -1,7 +1,7 @@
 ---
 title: "应用程序启动器Synapse"
 linkTitle: "Synapse"
-weight: 421
+weight: 20
 date: 2021-08-26
 description: >
   Synapse是一个很轻巧的应用程序启动器。

@@ -13,10 +13,10 @@ description: >
 
 https://www.xmind.cn/download/
 
-Xmind 支持 windows，mac 和 linux，下载 linux 64位版本即可，如 `Xmind-for-Linux-amd64bit-24.04.10311-202405240010.deb`  即可。
+Xmind 支持 windows，mac 和 linux，下载 linux 64位版本即可，如 `Xmind-for-Linux-amd64bit-**.deb`  即可。
 
 
 ### 安装
 
-直接安装下载好的 `Xmind-for-Linux-amd64bit-24.04.10311-202405240010.deb` 就可以了.
+直接安装下载好的 `Xmind-for-Linux-amd64bit-**.deb` 就可以了.
 

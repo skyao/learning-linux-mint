@@ -15,12 +15,18 @@ description: >
 
 https://typora.io/
 
-安装方式：
+安装方式，可以直接下载 deb 安装文件：
+
+https://download.typora.io/linux/typora_1.9.3_amd64.deb
+
+或者用 apt-get 安装：
 
 ```bash
 wget -qO - https://typora.io/linux/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/typora.asc
+# add Typora's repository
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
+# install typora
 sudo apt-get install typora
 ```
 

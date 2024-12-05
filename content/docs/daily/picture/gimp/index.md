@@ -1,7 +1,7 @@
 ---
 title: "GIMP"
 linkTitle: "GIMP"
-weight: 425
+weight: 10
 date: 2021-08-26
 description: >
   图形处理软件GIMP

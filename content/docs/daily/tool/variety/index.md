@@ -1,13 +1,13 @@
 ---
 title: "壁纸管理软件variety"
-linkTitle: "variety"
-weight: 426
+linkTitle: "[归档]variety"
+weight: 98
 date: 2021-08-26
 description: >
   variety 是一个壁纸管理软件，支持自动切换壁纸，支持网络下载。
 ---
 
-
+归档原因：还是要专注，壁纸选中一个就不换了。
 
 ### 介绍
 

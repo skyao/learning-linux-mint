@@ -13,7 +13,7 @@ description: >
 
 https://code.visualstudio.com/docs/?dv=linux64_deb
 
-下载的 code_1.73.0-1667318785_amd64.deb 文件直接安装即可。
+下载的 `code_*_amd64.deb` 文件直接安装即可。
 
 ## 初始化配置
 
@@ -31,42 +31,9 @@ https://code.visualstudio.com/docs/?dv=linux64_deb
 
 `'WenQuanyi Micro Hei Mono', 'monospace', monospace`
 
-然后将默认字体大小从 14 修改为 18（27寸4k显示器, mbp 上我用20）。
+然后将默认字体大小从 14 修改为更大的数字：
 
-## 安装扩展
+- 27寸4k显示器建议 18
+- mbp 16寸笔记本建议 20
+- 16寸4k显示器建议 24
 
-### go
-
-Go Team at Google
-
-Rich Go language support for Visual Studio Code
-
-会有很多依赖需要一起安装，install all即可
-
-### GitLens
-
-
-
-### Remote - SSH
-
-
-
-### Dev Containers
-
-
-
-### github codespaces
-
-
-
-## 配置
-
-### lunch.json
-
-变量参考：
-
-https://code.visualstudio.com/docs/editor/variables-reference
-
-比较常用的是：
-
-- ${workspaceFolder}

@@ -1,7 +1,7 @@
 ---
 title: "DeadBeef"
 linkTitle: "DeadBeef"
-weight: 471
+weight: 20
 date: 2021-08-26
 description: >
   DeadBeef音乐播放器，支持 DSD 格式

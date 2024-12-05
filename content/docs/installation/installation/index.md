@@ -14,7 +14,7 @@ Linux Mint 的安装比较简单，安装速度也非常快。
 
 ## 安装前准备
 
-从 Linux Mint 的下载页面下载 Linux Mint 21.2 的 Cinnamon 的64位版本。
+从 Linux Mint 的下载页面下载 Linux Mint 22 的 Cinnamon 的64位版本。
 
 https://linuxmint.com/download.php
 

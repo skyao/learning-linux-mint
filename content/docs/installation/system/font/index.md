@@ -67,6 +67,8 @@ sudo apt-get install fonts-wqy-microhei
 
 https://debian.pkgs.org/sid/debian-main-amd64/fonts-wqy-microhei_0.2.0-beta-3.1_all.deb.html
 
+
+
 打开菜单-->首选项--> 选择字体，默认字体设置如下：
 
 - Default Font: Ubuntu Regular 10
@@ -101,4 +103,4 @@ https://debian.pkgs.org/sid/debian-main-amd64/fonts-wqy-microhei_0.2.0-beta-3.1_
 
 打开命令行，"编辑" -> "首选项" 中勾选自定义自体，适当放大字体，默认12,可以考虑20。
 
-对比了 Ubuntu Mono / Monospace 等等宽字体，最后发现还是默认的 Monospace 比较好看，就不修改了。 
+字体设置为 DejaVu Sans Mono 比较好看。

@@ -1,11 +1,13 @@
 ---
 title: "网易云音乐"
-linkTitle: "网易云音乐"
-weight: 475
+linkTitle: "[归档]网易云音乐"
+weight: 99
 date: 2021-08-26
 description: >
   曾经最喜欢的在线音乐播放器
 ---
+
+归档原因：网易云音乐越做越让人不喜欢，放弃
 
 ## 下载
 

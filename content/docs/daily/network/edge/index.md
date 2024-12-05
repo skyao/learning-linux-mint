@@ -7,6 +7,16 @@ description: >
   微软Edge浏览器是目前最好用的浏览器了，我用它替换了google的chrome
 ---
 
+## 安装
+
+### 直接下载安装
+
+https://www.microsoft.com/zh-tw/edge/download
+
+选择 deb 格式下载安装即可。
+
+### apt安装
+
 参考：
 
 https://linuxhint.com/install-microsoft-edge-browser-ubuntu/

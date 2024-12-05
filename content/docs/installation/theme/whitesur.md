@@ -13,13 +13,81 @@ description: >
 
 ![](https://github.com/vinceliuice/WhiteSur-gtk-theme/raw/pictures/pictures/macbook.png)
 
-## 安装WhiteSur主题
+WhiteSur 主题的安装可以有自动和手工两种方式。
 
-### 手工下载安装主题
+## 自动安装
+
+利用 WhiteSur 提供的安装脚本进行安装。
+
+### 安装 WhiteSur Gtk Theme
+
+github 仓库地址： https://github.com/vinceliuice/WhiteSur-gtk-theme
+
+将仓库克隆到本地，然后通过 `install.sh` 脚本进行安装：
+
+```bash
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
+cd WhiteSur-gtk-theme
+./install.sh
+```
+
+安装完成之后，就可以打开 "首选项" -> "主题"，在 "应用程序" 和 "桌面" 中找到 WhiteSur-Dark/WhiteSur-Dark-solid/WhiteSur-Light/WhiteSur-Light-solid 四个选项。按照自己喜欢选择即可，我一般选 WhiteSur-Dark-solid。
+
+### 安装 WhiteSur icon
+
+这是 WhiteSur 用到的图标。
+
+github 仓库地址： https://github.com/vinceliuice/WhiteSur-icon-theme
+
+将仓库克隆到本地，然后通过 `install.sh` 脚本进行安装：
+
+```bash
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+cd WhiteSur-icon-theme
+./install.sh -b
+```
+
+安装完成之后，就可以打开 "首选项" -> "主题"，在 "图表" 中找到 WhiteSur/WhiteSur-Dark/WhiteSur-Light 三个选项。按照自己喜欢选择即可，我一般选 WhiteSur-Dark。
+
+### 安装 WhiteSur cursors
+
+这是 WhiteSur 用到的鼠标指针。
+
+github 仓库地址： https://github.com/vinceliuice/WhiteSur-cursors
+
+将仓库克隆到本地，然后通过 `install.sh` 脚本进行安装：
+
+```bash
+git clone https://github.com/vinceliuice/WhiteSur-cursors.git
+cd WhiteSur-cursors
+./install.sh
+```
+
+安装完成之后，就可以打开 "首选项" -> "主题"，在 "鼠标指针" 中找到 WhiteSur-cursors 选项。
+
+### 安装 WhiteSur wallpapers
+
+这是 WhiteSur 用到的 macos 的经典壁纸。
+
+github 仓库地址： https://github.com/vinceliuice/WhiteSur-wallpapers
+
+将仓库克隆到本地，然后通过 `install-wallpapers.sh` 脚本进行安装：
+
+```bash
+git clone https://github.com/vinceliuice/WhiteSur-wallpapers.git
+cd WhiteSur-wallpapers
+./install-wallpapers.sh
+```
+
+壁纸会复制到 `~/.local/share/backgrounds` 目录下。
+
+在桌面上右键，"改变桌面背景"，增加一个目录指向 `~/.local/share/backgrounds`，然后选择一个喜欢的图片作为桌面壁纸。我一般喜欢选 WhiteSur。
+
+## 手工安装
 
 WhiteSur主题相关的文件可以从下面地址下载：
 
-#### WhiteSur Gtk Theme
+### 下载安装 WhiteSur Gtk Theme
 
 这是 WhiteSur Gtk 主题。
 
@@ -34,7 +102,7 @@ WhiteSur主题相关的文件可以从下面地址下载：
 
 > 备注：看介绍说NVIDIA的显卡适合用 solid 的主题，不了解为什么，都下载下来
 
-#### WhiteSur-icon-theme
+### 下载安装 WhiteSur-icon-theme
 
 这是仿big sur的图标。
 
@@ -44,7 +112,7 @@ WhiteSur主题相关的文件可以从下面地址下载：
 
 - 01-WhiteSur.tar.xz
 
-#### macOS Big Sur  cursors
+### 下载安装 macOS Big Sur cursors
 
 这是仿big sur的鼠标指针。
 
@@ -54,7 +122,7 @@ WhiteSur主题相关的文件可以从下面地址下载：
 
 - macOSBigSur.tar.gz
 
-#### 主题文件部署
+### 主题文件部署
 
 进入当前用户的 home 目录，建立以下文件夹：
 
@@ -66,7 +134,7 @@ mkdir .icons
 
 将前面下载的主题文件和icon文件（包括cursors的图标）都解压后复制到上面两个目录中。
 
-#### 设置主题为WhiteSur
+### 设置主题为WhiteSur
 
 打开系统的 "主题" 设置，将 窗口边框 / 图标  / 控件 / 鼠标指针 / 桌面 都修改为 `WhiteSur`。
 
@@ -84,7 +152,11 @@ mkdir .icons
 
 - 修改面板高度
 
-    在面板上右键，点 面板配置，将面板高度从默认的40修改为最小的20。
+    在面板上右键，点 面板配置，将面板高度从默认的40修改为32。
+
+- 修改面板外观
+
+    左侧区域，彩色图表大小设置为 24px，符号图表大小设置为 20。
 
 - 将自动隐藏面板设置为智能隐藏。
 
@@ -97,6 +169,12 @@ https://512pixels.net/projects/default-mac-wallpapers-in-5k/#jp-carousel-19693
 这个地址里面有mac各个版本的壁纸可供下载，5k/6k的分辨率足够清晰，下载 big sur 和 Monterey 经典的彩色壁纸。
 
 主题搞定！此时界面已经美化了很多。
+
+## 安装 dock
+
+这里选择使用 plank ，因为安装非常简单。
+
+打开软件管理器，搜索 plank 并安装。
 
 ## 其他补充
 

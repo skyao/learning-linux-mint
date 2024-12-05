@@ -17,5 +17,5 @@ description: >
 
 https://github.com/koreader/koreader/releases
 
-找到 amd64 的 deb 文件下载，如 koreader-2024.07-amd64.deb。然后直接安装。
+找到 amd64 的 deb 文件下载，如 koreader-2024.11-amd64.deb。然后直接安装。
 

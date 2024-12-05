@@ -57,10 +57,22 @@ alias turn-off-screens='cinnamon-screensaver-command -l;export DISPLAY=:0.0;xset
 
 ### 添加快捷键
 
-增加一个命令，在 `/usr/local/bin` 创建` shortcut_turn_off_screen.sh`文件，内容为：
+增加一个命令，在 `/usr/local/bin` 创建` shortcut_turn_off_screen.sh`文件，
+
+```bash
+sudo vi /usr/local/bin/shortcut_turn_off_screen.sh
+```
+
+内容为：
 
 ```bash
 bash -c "cinnamon-screensaver-command -l;export DISPLAY=:0.0;xset dpms force off;"
+```
+
+记得设置可执行权限：
+
+```bash
+sudo chmod +x /usr/local/bin/shortcut_turn_off_screen.sh
 ```
 
 然后在 linux mint 的 System Settings 中选择 Keyboard -> Shortcuts -> Custom Shortcuts，"add custom shortcut"。名称设置为"turn off screen"，命令为:
