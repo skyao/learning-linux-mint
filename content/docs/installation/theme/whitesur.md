@@ -176,15 +176,44 @@ https://512pixels.net/projects/default-mac-wallpapers-in-5k/#jp-carousel-19693
 
 打开软件管理器，搜索 plank 并安装。
 
+设置开启自动启动 plank 应用，延迟2秒。
+
+打开 plank 的设置，注意这个操作需要非常小心的在 plank 和桌面的交界处右键，左边一点点会显示图标的邮件内容，右边一点点会显示桌面的右键内容，plank 的右键有效区域可能只有几个像素点的宽度，很难点上。
+
+theme 主题修改为 gtk+，默认是显示在主显示器上，如果有需要可以修改为特定的屏幕。Icon size 默认48 我喜欢改成42。
+
+Behaviour 中开启 "Restrict to workspace"，这样在不同 workspace 中打开的应用就只会在当前 workspace 中显示，缺点是容易找不到。
+
+Docklets 中增加显示桌面 / applications / Clock 和 CPU Monitor。
+
+- 显示桌面方便打开窗口太多时快速最小化所有窗口显示桌面
+- applications 有点像在 dock 中增加了一个 windows 开始菜单的感觉。
+- Clock时钟方便看时间
+- CPU Monitor 方便看 cpu 和内存使用情况
+
+目前排列顺序，从左到右依次是：
+
+- 显示桌面
+- applications
+- Clock
+- CPU Monitor
+- Edge浏览器
+- Thunderbird邮件
+- vs code
+- 终端
+- 文件浏览器
+
 ## 其他补充
 
 ### desktop cube
 
 打开 extension（扩展），在下载中找到 desktop cube，双击安装，然后点 + 启用。
 
-> 备注：如果安装是报错说连接被重置，请开启科学上网。
+> 备注：如果安装时报错说连接被重置，请开启科学上网。
 
 这是是用于workspace切换时的转场动画，挺酷炫的。
+
+顺便打开 workspace，打开 "allow cycling through workspace"，这样就可以在第一个/最后一个 workspace 之间跳转。
 
 ### 减少桌面图标
 
