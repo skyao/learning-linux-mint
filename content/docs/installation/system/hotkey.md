@@ -1,7 +1,7 @@
 ---
 title: "修改Linux Mint的快捷键"
 linkTitle: "快捷键修改"
-weight: 222
+weight: 30
 date: 2021-08-26
 description: >
   修改Linux Mint默认的快捷键，避免冲突

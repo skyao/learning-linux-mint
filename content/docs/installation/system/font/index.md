@@ -1,7 +1,7 @@
 ---
 title: "修改字体设置"
 linkTitle: "字体设置"
-weight: 224
+weight: 50
 date: 2021-08-26
 description: >
   修改Linux Mint的默认字体设置

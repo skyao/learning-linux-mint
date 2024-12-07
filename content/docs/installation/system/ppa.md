@@ -1,7 +1,7 @@
 ---
 title: "取消PPA仓库"
 linkTitle: "取消PPA仓库"
-weight: 221
+weight: 10
 date: 2021-08-26
 description: >
   取消PPA仓库以加速apt-get update的速度

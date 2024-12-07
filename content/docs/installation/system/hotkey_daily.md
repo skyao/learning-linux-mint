@@ -1,7 +1,7 @@
 ---
 title: "修改后的Linux Mint的常用快捷键"
 linkTitle: "[参考]常用快捷键"
-weight: 223
+weight: 40
 date: 2021-08-26
 description: >
   列出常用的快捷键，方便记忆
