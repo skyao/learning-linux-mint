@@ -66,7 +66,13 @@ Linux 下 typora 的字体不是太好看，而且字体是通过主题来设置
 
 不过，typora 给了一个 "添加自定义css" 的方案，可以简单的搞定这个问题。
 
-打开主题所在的目录，如 `/home/sky/.config/Typora/themes` ，新建一个 `base.user.css` 文件，内容为：
+打开主题所在的目录，如 `/home/sky/.config/Typora/themes` ，新建一个 `base.user.css` 文件，
+
+```bash
+vi /home/sky/.config/Typora/themes/base.user.css
+```
+
+如果安装语言是中文，则内容为：
 
 ```css
 body {
