@@ -9,5 +9,5 @@ description: >
 
 参见：
 
-https://skyao.io/learning-ubuntu-server/docs/installation/basic/zsh/
+https://skyao.net/learning-ubuntu-server/docs/installation/basic/zsh/
 
