@@ -24,7 +24,7 @@ https://dl2.cdn.filezilla-project.org/client/FileZilla_3.69.3_x86_64-linux-gnu.t
 解压缩下载下来的 FileZilla_3.69.3_x86_64-linux-gnu.tar.xz 文件, 放到 `/home/sky/work/soft` 目录.
 
 ```bash
-tar -C /home/sky/work/soft FileZilla_3.69.3_x86_64-linux-gnu.tar.xz
+tar xvf FileZilla_3.69.3_x86_64-linux-gnu.tar.xz -C /home/sky/work/soft
 ```
 
 ### 启动
