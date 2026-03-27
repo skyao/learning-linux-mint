@@ -65,44 +65,7 @@ powercfg /h off
 
 如果要求有写入权限，则推荐直接修改 `/etc/fstab` 文件。
 
-```bash
-sudo vi /etc/fstab
-```
-
-加入以下内容：
-
-```bash
-/dev/nvme0n1p6   /media/d ntfs-3g user,auto,rw,dev,exec,suid,async,utf8,dmask=000,fmask=111 0 0 
-```
-
-其中 `/dev/nvme0n1p6` 是要挂载的 windows ntfs 盘符。可以通过 
-
-```bash
-sudo fdisk -l
-```
-
-查看 device 名称：
-
-```bash
-Disk /dev/nvme0n1: 3.49 TiB, 3840755982336 bytes, 7501476528 sectors
-Disk model: KCD61LUL3T84                            
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 4096 bytes
-I/O size (minimum/optimal): 4096 bytes / 4096 bytes
-Disklabel type: gpt
-Disk identifier: FBEFBE02-9843-4FEC-8B2C-C50B5EAD8069
-
-Device              Start        End    Sectors   Size Type
-/dev/nvme0n1p1       2048     206847     204800   100M EFI System
-/dev/nvme0n1p2     206848     239615      32768    16M Microsoft reserved
-/dev/nvme0n1p3     239616 1047643943 1047404328 499.4G Microsoft basic data
-/dev/nvme0n1p4 1047644160 1048813567    1169408   571M Windows recovery environment
-/dev/nvme0n1p5 1048815616 2097391615 1048576000   500G Microsoft basic data
-/dev/nvme0n1p6 2097391616 7340271615 5242880000   2.4T Microsoft basic data
-/dev/nvme0n1p7 7340271616 7501475839  161204224  76.9G Microsoft basic data
-```
-
-或者用 uuid 来指定要挂载的盘符，执行 
+执行 
 
 ```bash
 sudo lsblk -f
@@ -111,21 +74,67 @@ sudo lsblk -f
 来查看各个盘符的 uuid：
 
 ```bash
+
 NAME        FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-nvme0n1                                                                            
-├─nvme0n1p1 vfat   FAT32       900E-C1BF                              64.9M    32% /boot/efi
-├─nvme0n1p2                                                                        
-├─nvme0n1p3 ntfs               DA58F6BA58F6948B                                    
-├─nvme0n1p4 ntfs               9AAA6103AA60DD6F                                    
-├─nvme0n1p5 ext4   1.0         9f09256f-e5b1-4aa2-894f-bb77605d58dc  358.5G    22% /
-├─nvme0n1p6 ntfs         data  2E3236E83236B4A5                        1.5T    37% /media/d
-└─nvme0n1p7 ext4   1.0         00b99ea7-c250-40af-b07e-3b2378c830cf   11.8G    79% /timeshift
+nvme0n1
+├─nvme0n1p1 vfat   FAT32       EC63-8FDF                              26.6M    72% /boot/efi
+├─nvme0n1p2
+├─nvme0n1p3 ntfs               1E1E79121E78E465
+├─nvme0n1p4 ntfs               CA5096F75096E989
+└─nvme0n1p5 ntfs         data  3AA6AC66A6AC247B                      595.4G    30% /media/sky/data
+nvme1n1
+├─nvme1n1p1 vfat   FAT32       8F75-FED5
+├─nvme1n1p2 ext4   1.0         82e1f69a-06ff-42f6-972a-3bdf635b62fe  825.9G     3% /
+└─nvme1n1p3 ext4   1.0         1730d77d-e91c-43ad-a883-c652c99541ae
 ```
 
-然后类似的修改 `/etc/fstab` 文件：
+这里我要自动挂载的是 nvme0n1p5 / uuid=3AA6AC66A6AC247B 的这个磁盘。系统之前临时把它挂载在了 /media/sky/data。为了开机自动挂载，需要确保这个目录始终存在：
 
 ```bash
-UUID=2E3236E83236B4A5 /media/d ntfs-3g user,auto,rw,dev,exec,suid,async,utf8,dmask=000,fmask=111 0 0
+sudo mkdir -p /media/sky/data
+
+sudo vi /etc/fstab
 ```
 
-如果遇到依然没有权限写入，则有可能是该 windows ntfs 盘符有问题，可以先进入 windows，用磁盘工具检查一遍这个盘符。之后重启进入 linux 应该就可以写入了。
+加入内容：
+
+```bash
+UUID=3AA6AC66A6AC247B  /media/sky/data  ntfs-3g  defaults,nofail,uid=1000,gid=1000,dmask=022,fmask=133  0  0
+```
+
+参数解释：
+
+- UUID=...：你的磁盘唯一标识符。
+- /media/sky/data：挂载的目标目录。
+- ntfs-3g：Linux 下可靠的 NTFS 读写驱动（也可以写成 ntfs 或 ntfs3）。
+- defaults：使用默认的挂载设置。
+- nofail：非常重要。如果这个磁盘损坏或被拔出，系统依然会正常开机，而不会卡在黑屏报错界面。
+- uid=1000,gid=1000：将磁盘的所有权交给当前的用户（假设你的账号 uid 是 1000），确保有最高读写权限。
+- dmask=022,fmask=133：合理的权限掩码，让文件夹权限为 755，文件权限为 644，避免所有文件都被当成可执行文件（在终端里全显示为绿色）。
+- 0 0：不进行 dump 备份，开机不强制进行磁盘检查（NTFS 磁盘由 Windows 负责修复最好）。
+
+重启之前，验证一下，先 umount。
+
+```bash
+sudo umount /media/sky/data
+sudo systemctl daemon-reload
+sudo mount -a
+```
+
+如果遇到报错：
+
+```bash
+The disk contains an unclean file system (0, 0).
+Metadata kept in Windows cache, refused to mount.
+Falling back to read-only mount because the NTFS partition is in an
+unsafe state. Please resume and shutdown Windows fully (no hibernation
+or fast restarting.)
+Could not mount read-write, trying read-only
+ntfs-3g-mount: failed to access mountpoint /media/sky/data: No such file or directory
+mount: (hint) your fstab has been modified, but systemd still uses
+the old version; use 'systemctl daemon-reload' to reload.
+```
+
+这表示 NTFS 磁盘被 Windows 锁定（导致只能只读），报错信息： The disk contains an unclean file system... Metadata kept in Windows cache, refused to mount.
+
+原因：  Windows 快速启动 (Fast Startup) 或休眠功能引起的。Windows 并没有真正的“彻底关机”，而是把磁盘缓存状态挂起冻结了。Linux 为了防止损坏数据，拒绝以“读写”模式强行挂载。
