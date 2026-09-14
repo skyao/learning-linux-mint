@@ -76,6 +76,36 @@ https://www.linuxmint.com/download_all.php
 
 重启之后，再次进入 更新管理器，删除旧的内核。
 
+### 软件管理器
+
+最新版本的 linux mint（如 22.3）在安装后第一次打开 软件管理器 时会卡住。表现为：打开 software manager，一直转圈圈，提示 generating cache, one moment，但等了很久也没有完成。
+
+问题所在： 新版软件管理器在生成缓存阶段会顺带扫描 Flatpak 源，而默认 Flathub（dl.flathub.org）在国内基本连不上，会让它挂着等网络超时。
+
+```bash
+ss -tpn | grep -E "mintinstall|python3" # 看它有没有挂着对外 TCP 连接
+4116
+4119
+ESTAB 0 0 [240e:46d:ac00:2a84:d082:c090:d662:e259]:47552 [2a04:4e42:68::347]:443 users:(("mintinstall",pid=4119,fd=30))
+ESTAB 0 0 [240e:46d:ac00:2a84:d082:c090:d662:e259]:47564 [2a04:4e42:68::347]:443 users:(("mintinstall",pid=4119,fd=37))
+```
+
+2a04:4e42::/32 是 Fastly 的 CDN 段，也就是 dl.flathub.org（Flathub 的下载服务器）。mintinstall 生成缓存时，除了 apt，还会刷新 Flathub 的 appstream 元数据——它在后台通过 Flatpak 去拉 Flathub，而 Flathub 的国际线路（尤其你这边还走 IPv6）在国内基本是"TCP 能连上、但 HTTP 数据半天流不动"，于是 mintinstall 就永远挂在那句 "Generating cache" 上。
+
+最简单的办法是先直接把 flathub 源摘掉就行（注意：只删 remote，不是卸载 flatpak 本体）：
+
+```bash
+sudo flatpak remote-delete --system flathub
+```
+
+然后重启软件管理器：
+
+```bash
+pkill -f mintinstall
+rm -rf ~/.cache/mintinstall
+mintinstall
+```
+
 ### 额外提示
 
 `Alt+F7` 是移动窗口的快捷键，在某些特殊情况下，如果屏幕分辨率因故被设置的太低，会出现窗口太长而无法在屏幕上显示完整，导致某些关键的输入和按钮在屏幕外点不到。

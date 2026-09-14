@@ -90,7 +90,7 @@ drwxr-xr-x 36 sky sky  4096 Sep 14 10:16 ..
 
 只要备份并同步这个 sitemanager.xml 文件就可以了。
 
-也可以通过图形界面操作，打开 site manager 之后，右键 my sites 选 export 即可。导入时从 File --> import 导入。
+也可以通过图形界面操作，打开 site manager 之后，右键 my sites 选 export 即可。导入时从 File --> import
 
 
 
