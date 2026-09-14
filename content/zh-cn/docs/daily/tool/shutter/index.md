@@ -70,18 +70,6 @@ sudo apt install shutter
 
 - [New Shutter PPA For Ubuntu 21.04, 20.10, 20.04 And 18.04 | Linux Mint 20.x And 19.x](https://www.linuxuprising.com/2018/10/shutter-removed-from-ubuntu-1810-and.html)
 
-### 配套软件包
-
-gnome-web-photo 包让shutter能够抓取完整的网站页面：
-
-```bash
-sudo apt install gnome-web-photo
-```
-
-使用时点击shutter界面上的 "网页" ，然后输入 URL 就可以截图。
-
-> TBD: Unable to locate package gnome-web-photo 最近报错无法安装
-
 ## 设置
 
 ### 图片导出格式

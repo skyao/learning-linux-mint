@@ -12,6 +12,14 @@ Linux Mint 的安装比较简单，安装速度也非常快。
 
 但是期间还是有一些事情要小心。
 
+## 版本选择
+
+我习惯使用 Cinnamon 版本。
+
+关于 LMDE 的额外说明：
+
+我尝试过使用 LMDE7, 先后在两台主力开发机器上使用，整体挺好用的。但后来陆陆续续发现各种小地方不舒服，又耗费非常大的力气重新安装会普通版本。个人建议不要折腾 LMDE 版本。我以后应该也不会再用 LMDE。
+
 ## 安装前准备
 
 从 Linux Mint 的下载页面下载 Linux Mint 22 的 Cinnamon 的64位版本。
@@ -20,14 +28,16 @@ https://linuxmint.com/download.php
 
 https://www.linuxmint.com/download_all.php
 
-之后使用各种工具将下载下来的 ISO 文件制作成启动 U 盘进行安装，推荐 rufus。
+之后使用各种工具将下载下来的 ISO 文件制作成启动 U 盘进行安装，推荐 rufus。Linux mint 下直接用系统自带的 iso 刻盘工具写入 u 盘即可。
 
 ## 安装
+
+安全起见，我一般都是全新安装，不做升级安装，尤其是跨大版本的升级安装。
 
 安装时，在选择安装盘符时需要注意：
 
 1. 最好单独再建立一个 EFI 分区，不要使用原有 windows 的EFI分区，大小一般128M足以
-2. 由于docker的原因，建议不建立交换分区
+2. 交换分区不用太大，16GB足以。
 3. 特别注意：启动信息那里一定要选择我们为linux新建的 EFI 分区
 
 安装过程中，如果提醒是否要下载更新，选择 no。原因是安装时使用的源是 Linux Mint 默认的源，对于国内用户速度很慢。建议选择在安装完成之后，再设置好国内速度快的源，然后再更新，速度就非常好。
@@ -50,7 +60,7 @@ https://www.linuxmint.com/download_all.php
 
 ![](images/software_sources.jpg)
 
-选择时会自动提供速度测试，可以根据测试出来的速度情况选择一个速度比较好的源，我这边选择的是 ustc 和 dgut 。
+选择时会自动提供速度测试，可以根据测试出来的速度情况选择一个速度比较好的源，我这边选择的是 aliyun 和 huaweicloud 。
 
 {{% alert title="Warning" color="warning" %}}
 注意一定要先更新软件源之后，再开始各种配置和安装，否则国外源时速度不好时非常浪费时间。
@@ -63,6 +73,8 @@ https://www.linuxmint.com/download_all.php
 {{% pageinfo color="primary" %}}
 我个人习惯是直接更新到最新版本的内核。
 {{% /pageinfo %}}
+
+重启之后，再次进入 更新管理器，删除旧的内核。
 
 ### 额外提示
 

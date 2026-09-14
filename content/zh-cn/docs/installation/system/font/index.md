@@ -10,6 +10,8 @@ description: >
 
 ### 添加微软雅黑字体
 
+> 备注：最新的 linxu mint  22.3 没有这个问题了。不过方便起见还是继续安装微软雅黑字体。
+
 某些网站会指定使用微软雅黑字体，而 linux mint 默认不带微软雅黑字体，因此在显示上会很难看。比如 https://www.chiphell.com/ 网站的首页，指定的首选字体微软雅黑是：
 
 ![](images/no-msyh-3.jpg)
@@ -61,12 +63,30 @@ ubuntu可以直接用 apt-get 安装：
 sudo apt-get install fonts-wqy-microhei
 ```
 
-这样下载安装的是 `fonts-wqy-microhei_0.2.0-beta-3_all.deb` 版本。
+下载安装的是 `fonts-wqy-microhei_0.2.0-beta-3.1_all.deb ` 版本：
+
+```bash
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  fonts-wqy-microhei
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,607 kB of archives.
+After this operation, 5,257 kB of additional disk space will be used.
+Get:1 http://mirrors.huaweicloud.com/repository/ubuntu noble/universe amd64 fonts-wqy-microhei all 0.2.0-beta-3.1 [1,607 kB]
+Fetched 1,607 kB in 1s (2,002 kB/s)             
+Selecting previously unselected package fonts-wqy-microhei.
+(Reading database ... 491575 files and directories currently installed.)
+Preparing to unpack .../fonts-wqy-microhei_0.2.0-beta-3.1_all.deb ...
+Unpacking fonts-wqy-microhei (0.2.0-beta-3.1) ...
+Setting up fonts-wqy-microhei (0.2.0-beta-3.1) ...
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+```
 
 也可以在这个页面手工下载deb安装包，版本是 `fonts-wqy-microhei_0.2.0-beta-3.1_all`：
 
 https://debian.pkgs.org/sid/debian-main-amd64/fonts-wqy-microhei_0.2.0-beta-3.1_all.deb.html
-
 
 
 打开菜单-->首选项--> 选择字体，默认字体设置如下：
@@ -77,12 +97,12 @@ https://debian.pkgs.org/sid/debian-main-amd64/fonts-wqy-microhei_0.2.0-beta-3.1_
 - Monospace Font: DejaVu Sans Mono Book 10
 - Window title front: Ubutu Medium 10
 
-一律修改成文泉驿等宽微米黑，字体大小也适当加大。
+除了等宽字体之后，其他字体一律修改成文泉驿等宽微米黑，字体大小根据显示器情况适当调整。
 
 - Default Font: Wenquanyi Micro Hei Regular 10
 - Desktop Font: Wenquanyi Micro Hei Regular 10
 - Document Font: Wenquanyi Micro Hei Regular 10
-- Monospace Font: Wenquanyi Micro Hei Mono Regular 10
+- Monospace Font: DejaVu Sans Mono Book 10
 - Window title front: Wenquanyi Micro Hei Regular 10
 
 > 备注：如果找不到文泉驿字体，请执行 `sudo fc-cache  -fv` 命令刷新字体缓存。

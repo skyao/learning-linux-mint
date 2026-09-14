@@ -50,8 +50,10 @@ sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.
 
 另外打开 power management，设置：
 
+- "Turn off the screen when inactive for": 维持默认的30分钟
 - "suspend when inactive for": never
-- "when the power button is pressed: Lock Screen
+- "when the power button is pressed: 修改为 Lock Screen
+- "Power mode": 对于台式机，修改为 performance。笔记本之类还是维持默认的 Blanced。
 
 ## 参考资料
 

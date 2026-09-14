@@ -26,6 +26,9 @@ github 仓库地址： https://github.com/vinceliuice/WhiteSur-gtk-theme
 将仓库克隆到本地，然后通过 `install.sh` 脚本进行安装：
 
 ```bash
+mkdir -p ~/work/code/linuxmint
+cd ~/work/code/linuxmint
+
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
 cd WhiteSur-gtk-theme
 ./install.sh
@@ -64,6 +67,8 @@ cd WhiteSur-cursors
 ```
 
 安装完成之后，就可以打开 "首选项" -> "主题"，在 "鼠标指针" 中找到 WhiteSur-cursors 选项。
+
+备注： 不知道为什么，选择 WhiteSur-cursors 之后，鼠标指针会特别的小，几乎没法看清，导致这个 WhiteSur 风格的鼠标指针不可用。我只好选择使用 DMZ-Black。
 
 ### 安装 WhiteSur wallpapers
 
@@ -178,9 +183,13 @@ https://512pixels.net/projects/default-mac-wallpapers-in-5k/#jp-carousel-19693
 
 设置开启自动启动 plank 应用，延迟2秒。
 
-打开 plank 的设置，注意这个操作需要非常小心的在 plank 和桌面的交界处右键，左边一点点会显示图标的邮件内容，右边一点点会显示桌面的右键内容，plank 的右键有效区域可能只有几个像素点的宽度，很难点上。
+打开 plank 的设置，注意这个操作需要非常小心的在 plank 和桌面的交界处右键，左边一点点会显示图标的邮件内容，右边一点点会显示桌面的右键内容，plank 的右键有效区域可能只有几个像素点的宽度，很难点上。最简单的方式还是用如下的命令打开 plank 的偏好配置窗口：
 
-theme 主题修改为 gtk+，默认是显示在主显示器上，如果有需要可以修改为特定的屏幕。Icon size 默认48 我喜欢改成42。
+```bash
+plank --preferences
+```
+
+theme 主题修改为 gtk+ 或者 transparent（透明），默认是显示在主显示器上，如果有需要可以修改为特定的屏幕。Icon size 默认48 我喜欢改成42。
 
 Behaviour 中开启 "Restrict to workspace"，这样在不同 workspace 中打开的应用就只会在当前 workspace 中显示，缺点是容易找不到。
 
