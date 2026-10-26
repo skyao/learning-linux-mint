@@ -102,3 +102,34 @@ You may now close this page
 
 > 注意： `/resuem` 操作只能在之前运行环境中进行，也就是说 resume 需要的数据是保留在本地而不是云端，所以不能机器A操作完成后，到机器B上继续。
 
+## 升级
+
+升级前先设置好代理，方便升级过程中下载 codex cli 安装文件。
+
+升级就是重新执行一次安装命令：
+
+```bash
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
+
+输出如下：
+
+```bash
+==> Installing Codex CLI
+==> Detected platform: Linux (x64)
+==> Resolved version: 0.164.0
+==> Detected existing npm-managed Codex at /home/sky/.nvm/versions/node/v24.21.0/bin/codex
+WARNING: Multiple managed Codex installs can be ambiguous because PATH order decides which one runs.
+==> Downloading Codex CLI
+==> Installing standalone package to /home/sky/.codex/packages/standalone/releases/0.164.0-x86_64-unknown-linux-musl
+Uninstall the existing npm-managed Codex now? [y/N] y
+==> Running: npm uninstall -g @openai/codex
+
+removed 2 packages in 219ms
+==> Current terminal: export PATH="/home/sky/.local/bin:$PATH" && codex
+==> Future terminals: open a new terminal and run: codex
+==> PATH was added to /home/sky/.zshrc
+Codex CLI 0.164.0 installed successfully.
+Start Codex now? [y/N] y
+==> Launching Codex
+```
